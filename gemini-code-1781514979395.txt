@@ -1,0 +1,31 @@
+REPOSITORY BUILD MODE
+
+TASK:
+Generate a Python module that implements the "Human-to-SOL Mapping Matrix" logic defined in the Human Interface Kernel.
+
+FILE PATH:
+L2_language_kernel.py
+
+REQUIREMENTS:
+1. Implement a function: `map_human_phrase(phrase: str) -> dict`.
+2. The function must map input phrases to:
+   - 'semantic_intent'
+   - 'sol_primitive'
+   - 'engineering_state'
+3. Rule A: Never use clinical or psychological labels (e.g., "depression", "anxiety"). Only use system signal flags.
+4. Rule B: If a phrase matches multiple intents, prioritize the [COST] primitive (Resource Depletion).
+5. Rule C: If a phrase has no match, return [VARIABILITY] and a constraint-tightening question to the user.
+6. Include test cases in an `if __name__ == "__main__":` block to demonstrate:
+   - Resource depletion mapping ("I have no strength")
+   - Stability/Constraint mapping ("I feel blocked")
+   - Unmatched/Ambiguous input handling.
+7. Use pure Python, optimized for integration with L3 Domain Packs.
+
+OUTPUT FORMAT:
+PATH:
+L2_language_kernel.py
+
+CONTENT:
+<full python code>
+
+Stop after code generation.
