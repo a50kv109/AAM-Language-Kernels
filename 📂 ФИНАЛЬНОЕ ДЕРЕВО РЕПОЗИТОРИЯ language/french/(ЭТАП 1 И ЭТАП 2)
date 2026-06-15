@@ -1,0 +1,10 @@
+language/french/
+├── INDEX.md                          # Готово (Файл 1)
+├── CREDITS.md                        # Готово (Файл 2)
+├── STATUS.md                         # Готово (Файл 3)
+├── CHANGELOG.md                      # Готово (Файл 4)
+├── ground_truth_matrix.md            # Готово (Файл 5 - CLAUSE_SANITIZATION_PASS)
+├── passport.md                       # Готово (Файл 6 - Технический, без авторства)
+├── audit_status.md                   # Готово (Файл 7 - С чистым CG = 0%)
+├── README.md                         # Стерилизован на предыдущем проходе
+└── context.md                        # Стерилизован на предыдущем проходе
