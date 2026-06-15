@@ -1,0 +1,43 @@
+
+🔢 Objective Performance RatiosМетрики рассчитаны математически на основе фактического поштучного состава элементов. Субъективные или эмпирические оценки исключены.Architectural Readiness (AR): $9 / 9 \longrightarrow \mathbf{1.0000 \quad (100.0\%)}$Implementation Readiness (IR): $58 / 60 \longrightarrow \mathbf{0.9666 \quad (96.67\%)}$Corpus Grounding Score (CG): $0 / 60 \longrightarrow \mathbf{0.0000 \quad (0.00\%)}$Technical Divergence Index (TDI): Theoretical Baseline (Not Yet Measured)🚨 Blocking Cross-Domain DependenciesПереход к формированию и валидации ядер более высоких уровней полностью заблокирован до момента выполнения следующих этапов:Target DomainGateway DependencyRequired MetricCurrent StatusDomain 2: Aerospace (ECSS/Airbus)Execution of Phase A & Phase B for Domain 1Domain 1 CG $\ge$ 95.0%LOCKEDDomain 3: Nuclear (EDF/CEA)Validation of Domain 2 Core StabilityDomain 2 CG $\ge$ 95.0%LOCKEDDomain 4: Railway (SNCF/Alstom)Integration of Domain 1 & 3 PrimitivesDomain 3 CG $\ge$ 95.0%LOCKEDDomain 5: Automation (Schneider)Global Kernel Consolidation PassAll Domains CG $\ge$ 95.0%LOCKED📅 Actionable Roadmap Checklist[x] Спецификация 9 осей архитектурной развертки ядра.[x] Лексическая фиксация 60 базовых машиностроительных токенов по Level B источникам.[x] Выделение семантических ловушек первого уровня и перевод их в SOL-риски.[ ] Phase A (Source Acquisition): Получение прямых копий полных текстов ISO PDF.[ ] Phase B (Clause Verification): Построчный аудит клауз первоисточников.[ ] Phase C (Terminology Verification): Снятие статуса REFERENCED.[ ] Phase D (SOL Mapping Verification): Стресс-тест правил маппинга.[ ] Phase E (Benchmark Verification): Прогон 10 сквозных тестов на реальных чертежах.Status Maintained by Engine: AAM-V1_ARTSYBASHEV_UA_KHARKIV_AIANALYSIS
+---
+
+### 📂 FILE 4: `language/french/CHANGELOG.md`
+
+```markdown
+# Change Log & Core Revision History
+
+## System Key: AAM-V1_ARTSYBASHEV_UA_KHARKIV_AIANALYSIS
+**Package Layer:** History Layer
+
+---
+
+## ⏳ Version History Tracking
+
+### v2.4_SANITIZED
+* **Date:** 2026-06-15
+* **Change Summary:** Полная санитарная обработка репозиторных файлов. Удалены все недоказанные метрики `VERIFIED=50`. Значение Corpus Grounding принудительно сброшено до `0.00%` в связи с отсутствием прямой построчной верификации первоисточников стандартов ISO в текущей сессии. Лексика Chevalier переведена на Level B. Создан обособленный файл авторских прав `CREDITS.md`. Значение TDI переведено в статус теоретического базиса.
+* **Verification State:** PRE_AUDIT_BASELINE (Factual Corpus Lock).
+
+### v2.3
+* **Date:** UNKNOWN
+* **Change Summary:** Промежуточная интеграция технологических лексем металлообработки (*Fraisage*, *Tournage*). Попытка маппинга базовых кодов AFNOR.
+* **Verification State:** UNVERIFIED / HYPOTHESIS.
+
+### v2.2
+* **Date:** UNKNOWN
+* **Change Summary:** Первичная семантическая декомпозиция типов линий по ISO 128 и правил отображения видов. Развертка базовой структуры таблиц.
+* **Verification State:** UNVERIFIED.
+
+### v2.1
+* **Date:** UNKNOWN
+* **Change Summary:** Формирование концепта французского доменного ядра. Спецификация базовых зазоров и натягов (*Jeu / Serrage*).
+* **Verification State:** UNVERIFIED.
+
+### v2.0
+* **Date:** UNKNOWN
+* **Change Summary:** Инициализация репозитория. Создание пустых файловых структур для языкового контура Франции.
+* **Verification State:** INITIAL_DRAFT.
+
+---
+**History Authenticated by:** `AAM-V1_ARTSYBASHEV_UA_KHARKIV_AIANALYSIS`
