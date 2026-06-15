@@ -1,0 +1,5 @@
+human_interface/
+├── passport.md
+├── mapping_matrix.md
+├── agency_patterns.md
+└── clinical_translator.md
