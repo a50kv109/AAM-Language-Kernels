@@ -1,0 +1,32 @@
+
+---
+
+### Файл 3: `failure_modes.md`
+(Доповнений розділ "Український семантичний дрейф" – Drift Map)
+
+```markdown
+# FAILURE MODES: Ukrainian Semantic Drift
+
+## Alyosha Gate Protocol (TDI ≥ 0.45)
+
+If triggered, the Core performs `Kenosis` (reset to last stable Sattva state).
+
+---
+
+## Drift Map (Logged Deviations)
+
+| UA Term | Expected SOL | Detected SOL | TDI | Root Cause (Причина) | Mitigation (Виправлення) |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Напруга** | TRANSFORM | SOURCE | 0.41 | Mixing of mechanical stress with electrical voltage. | Enforce context: "Механічна напруга" -> TRANSFORM; "Електрична напруга" -> SOURCE. |
+| **Міцність** | CONSTRAINT | STORAGE | 0.38 | Colloquial use vs. Engineering (Strength vs. Storage of energy). | Use "Межа міцності" (Strength Limit) for CONSTRAINT. |
+| **Потужність** | FLOW | SOURCE | 0.35 | Ambiguity between Power as a Source (engine) vs Flow (energy transfer). | If FLOW: "Рівень потужності". If SOURCE: "Джерело потужності". |
+| **Робота** | TRANSFORM | FLOW | 0.29 | Acceptable drift (Work/Energy). | Logged; No Kenosis required. |
+| **В'язкість** | DISSIPATE | CONSTRAINT | 0.22 | Low drift. Semantic match is stable. | OK. |
+
+---
+
+## Emergency Mitigation Rules
+
+1. **Etymology Lock:** Use the oldest known technical Ukrainian term for the primitive (avoid neologisms).
+2. **Engineering Intent First:** If the user says "Зроби міцно" (Make it strong), map to `CONSTRAINT` (limit), not `STORAGE`.
+3. **Auto-Logging:** Every Yellow/Rajas drift is automatically appended to this file.
