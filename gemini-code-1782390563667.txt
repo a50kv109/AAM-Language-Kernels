@@ -1,0 +1,42 @@
+AAM-Language-Kernels/
+├── README.md                           (Главная точка входа)
+├── LICENSE                             
+│
+├── docs/                               (Глобальная документация)
+│   ├── philosophy_aam_v1.md
+│   ├── global_architecture.md
+│   └── maturity_pipeline.md            (Описание статусов DRAFT -> RELEASED)
+│
+├── shared/                             (Инвариантное ядро - не зависит от языков)
+│   ├── eir/
+│   │   ├── eir_specification.md        (Описание Engineering Intermediate Representation)
+│   │   └── sol_primitives_map.md
+│   ├── semantic_normalizer/
+│   │   └── normalizer_engine_spec.md   (Правила перевода в EIR и обратно)
+│   ├── belov_fiber/
+│   │   └── belov_protocol.md           (Алгоритм расчета Phi)
+│   └── axis8/
+│       └── axis8_framework.md
+│
+├── language/                           (Языковые ядра - изолированы друг от друга)
+│   ├── english/
+│   │   ├── INDEX.md
+│   │   ├── STATUS.md                   (Status: SPECIFICATION)
+│   │   ├── cognitive_passport.md       (Паттерны EN)
+│   │   └── dictionary_en_eir.md        (Словарь EN -> EIR)
+│   ├── french/
+│   │   ├── INDEX.md
+│   │   ├── STATUS.md                   (Status: SPECIFICATION)
+│   │   ├── cognitive_passport.md       (Паттерны FR: Nominalisation, Serrage)
+│   │   └── dictionary_fr_eir.md        (Словарь FR -> EIR)
+│   └── future_languages/               (Шаблоны для добавления)
+│
+└── bridges/                            (Доказательства совместимости пар)
+    ├── english_french/
+    │   ├── README.md
+    │   ├── 01_PROJECT_OVERVIEW.md      (Status: ARCHITECTURE_APPROVED)
+    │   ├── 02_BRIDGE_ARCHITECTURE.md   (Как Normalizer связывает именно EN и FR)
+    │   ├── 03_MAPPING_SPEC.md          (Специфические коллизии EN-FR)
+    │   ├── 04_VALIDATION_PROTOCOL.md   (Методика проверки именно этого моста)
+    │   └── 05_TEST_SUITE_30_CASES.md   (30 инженерных ситуаций)
+    └── english_chinese/                (Зарезервировано)
