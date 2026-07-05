@@ -3,7 +3,7 @@
 ## 📋 ზოგადი ინფორმაცია
 - **ენა:** ქართული (Georgian)
 - **ISO კოდი:** ka-GE
-- **როლი: SEMANTIC GATEWAY (AAM-V2)
+- **როლი:** SEMANTIC GATEWAY (AAM-V2)
 - **ბირთვის ID:** GE:15
 - **არქიტექტურის ვერსია:** AAM-V2.20-AXIS10
 - **ინტეგრაციის პროტოკოლი:** AAM-V2_ARTSYBASHEV

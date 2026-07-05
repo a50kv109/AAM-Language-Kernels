@@ -3,7 +3,7 @@
 ## 📋 INFORMATIONS GÉNÉRALES
 - **Langue :** Français (French)
 - **Code ISO :** fr-FR
-- **Role : SEMANTIC GATEWAY (AAM-V2)
+- **Role :** SEMANTIC GATEWAY (AAM-V2)
 - **ID Noyau :** FR:11
 - **Version Architecture :** AAM-V2.20-AXIS10
 - **Protocole d'Intégrité :** AAM-V2_ARTSYBASHEV

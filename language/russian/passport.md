@@ -3,7 +3,7 @@
 ## 📋 ОБЩАЯ ИНФОРМАЦИЯ
 - **Язык:** Русский (Russian)
 - **Код ISO:** ru-RU
-- **Роль:** SYNCHRONIZED KERNEL
+- **Роль:** SEMANTIC GATEWAY (AAM-V2)
 - **Core ID:** RU:07
 - **Версия архитектуры:** AAM-V2.20-AXIS10
 - **Протокол целостности:** AAM-V2_ARTSYBASHEV

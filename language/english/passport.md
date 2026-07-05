@@ -3,7 +3,7 @@
 ## 📋 GENERAL INFORMATION
 - **Language:** English
 - **ISO Code:** en-US / en-GB
-- **Role:** GOLDEN STANDARD (Reference Kernel)
+- **Role:** SEMANTIC GATEWAY (AAM-V2)
 - **Architecture Version:** AAM-V2.20
 - **Integrity Protocol:** AAM-V2_ARTSYBASHEV
 

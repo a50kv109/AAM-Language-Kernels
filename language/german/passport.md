@@ -3,7 +3,7 @@
 ## 📋 GENERAL INFORMATION
 - **Language:** German (Deutsch)
 - **ISO Code:** de-DE
-- **Role:** AXIS-10 ENGINEERING KERNEL
+- **Role:** SEMANTIC GATEWAY (AAM-V2)
 - **Domain ID:** DE:12
 - **Architecture Version:** AAM-V2.20-AXIS10
 - **Integrity Protocol:** AAM-V2_ARTSYBASHEV

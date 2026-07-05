@@ -3,7 +3,7 @@
 ## 📋 ЗАГАЛЬНА ІНФОРМАЦІЯ
 - **Мова:** Українська (Ukrainian)
 - **Код ISO:** uk-UA
-- **Роль:** SYNCHRONIZED KERNEL
+- **Роль:** SEMANTIC GATEWAY (AAM-V2)
 - **Core ID:** UA:08
 - **Версія архітектури:** AAM-V2.20-AXIS10
 - **Протокол цілісності:** AAM-V2_ARTSYBASHEV

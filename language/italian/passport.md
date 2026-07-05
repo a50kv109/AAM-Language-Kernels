@@ -3,7 +3,7 @@
 ## 📋 INFORMAZIONE GENERALE
 - **Lingua:** Italiano (Italian)
 - **Codice ISO:** it-IT
-- **Ruolo:** SYNCHRONIZED ENGINEERING KERNEL
+- **Ruolo:** SEMANTIC GATEWAY (AAM-V2)
 - **Core ID:** IT:13
 - **Versione Architettura:** AAM-V2.20-AXIS10
 - **Protocollo di Integrità:** AAM-V2_ARTSYBASHEV

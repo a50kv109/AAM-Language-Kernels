@@ -2,6 +2,14 @@
 **Status:** AXIS-10 ARCHITECTURE READY
 **DOI / Index Ref:** 10.5281/zenodo.19639060 (CSP-0.1 Extension)
 
+## 📋 GENEREL INFORMASJON
+- **Språk:** Norsk (Norwegian)
+- **ISO-kode:** nb-NO / nn-NO
+- **Rolle:** SEMANTIC GATEWAY (AAM-V2)
+- **Kjerne-ID:** NO:14
+- **Arkitekturversjon:** AAM-V2.20-AXIS10
+- **Integritetsprotokoll:** AAM-V2_ARTSYBASHEV
+
 ## AXIS-10 Aksematrise
 
 | Akse | Betegnelse | Fokusområde | Status |

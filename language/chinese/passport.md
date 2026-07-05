@@ -3,7 +3,7 @@
 ## 📋 基本信息
 - **语言：** 中文 (Chinese)
 - **ISO 代码：** zh-CN
-- **角色：** SYNCHRONIZED KERNEL
+- **角色：** SEMANTIC GATEWAY (AAM-V2) SYNCHRONIZED KERNEL
 - **核心 ID：** ZH:09
 - **架构版本：** AAM-V2.20-AXIS10
 - **完整性协议：** AAM-V2_ARTSYBASHEV
