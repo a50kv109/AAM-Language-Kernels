@@ -6,15 +6,21 @@ AAM-Language-Kernels: Модульная архитектура языковог
 - Основная архитектура: [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)
 
 Доступные языковые ядра:
-- French
-- Chinese
-- Russian
-- Ukrainian
-- English
+- Английский (EN:10 - Golden Standard)
+- Русский (RU)
+- Украинский (UA)
+- Китайский (ZH)
+- Французский (FR)
+- Немецкий (DE)
+- Итальянский (IT)
+- Норвежский (NO)
+- Грузинский (GE)
+- Санскрит (SA:16 - Reference Gateway)
 
 Для контрибьюторов:
 - Используйте `MASTER_AXIS10_CONFIG.md` для стандартизации конфигураций новых ядер.
-- Следуйте структуре, описанной в `Master_Kernel_Template.md` при добавлении новых INDEX.md для языков.
+- Следуйте структуре, описанной в `language/master/AXIS10_FULL_TEMPLATE.md` при добавлении новых `INDEX.md` для языков.
+- Соблюдайте `SEMANTIC_GOVERNANCE.md` как конституцию смыслов AAM-V2 для всех шлюзов и интеграций.
 
 Поддержание:
 - Лицензия: Apache-2.0 (файл LICENSE)
