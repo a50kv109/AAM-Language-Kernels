@@ -1,43 +1,46 @@
-# Passaporto del Nucleo Linguistico: IT:13
+# Italian Language Kernel Passport — IT:13
 
-## 📋 INFORMAZIONE GENERALE
-- **Lingua:** Italiano (Italian)
-- **Codice ISO:** it-IT
-- **Ruolo:** SEMANTIC GATEWAY (AAM-V2)
+## Identity
+
+- **Language:** Italiano (Italian)
+- **Locale:** it-IT
+- **ISO 639-1:** it
 - **Core ID:** IT:13
-- **Versione Architettura:** AAM-V2.20-AXIS10
-- **Protocollo di Integrità:** AAM-V2_ARTSYBASHEV
+- **Role:** Semantic Gateway
+- **Architecture reference:** AAM-V2 / AXIS-10
+- **Operational status:** INITIALIZING
 
-## 🧠 CONFIGURAZIONE AXIS-10 (Standard a 10 Assi)
+## Purpose
 
-### Engineering Semantic Compiler (ESC) Status
-- **Protocollo:** AAM-V2_ARTSYBASHEV
-- **Configurazione (Master):** [include: ../../../MASTER_AXIS10_CONFIG.md]
-- **Master Link:** [MASTER_AXIS10_CONFIG.md](../../MASTER_AXIS10_CONFIG.md)
-- **ESC Attivato:** ✅ SI
-- **Livello di Validazione:** FULL (SOL-tags + Integrity Score + TDI)
+The Italian kernel represents Italian lexical, grammatical and contextual meaning for cross-lingual semantic work. It is a language gateway, not an engineering or music-performance executor.
 
-### DEFINIZIONE DEI 10 ASSI:
+## AXIS-10 alignment
 
-#### ASSI LINGUISTICI (1-7):
-1. **Semantica (Semantica):** Struttura concettuale e relazioni tecniche.
-2. **Pragmatica (Pragmatica):** Comunicazione ingegneristica e strategie retoriche.
-3. **Sintassi (Sintassi):** Precisione manualistica e flessibilità espressiva.
-4. **Morfologia (Morfologia):** Gestione delle desinenze stabili e substrato latino.
-5. **Emozionalità (Emotività):** Estetica del design, affidabilità, precisione.
-6. **Contestualità (Contestualità):** Registri industriali e aziendali.
-7. **Simbolismo Sonoro (Simbologia sonora):** Tradizione tecnica e fonetica italiana.
+- [Master AXIS-10 configuration](../../MASTER_AXIS10_CONFIG.md)
+- [Semantic governance](../../SEMANTIC_GOVERNANCE.md)
+- [Architecture overview](../../docs/ARCHITECTURE.md)
 
-#### ASSI INGEGNERISTICI (8-10):
-8. **Tecnico (Ingegneria):** Progettazione, standard UNI/DIN, tolleranze geometriche.
-9. **Medico (Medicina e Biomedica):** Strumentazione diagnostica, protocolli biomedici.
-10. **Specializzato (Fachtechnik Industriale):** Automazione, controllo qualità, robotica.
+SOL tags (SOURCE, CONSTRAINT, DISSIPATE) may describe causal or process semantics where appropriate. They are not mandatory labels for every ordinary grammatical construction.
 
-### Metriche di Controllo
-- **Target Integrity Score:** ≥ 0.93
-- **Soglia TDI (Tensor Divergence Index):** ≤ 0.32
-- **Current IS:** 0.00
-- **Stato:** ⚠️ INITIALIZING_AXIS10
+## Domain coverage
 
-### Dichiarazione di Conformità
-Questo nucleo è integrato nel sistema AAM-V2 come hub per il design e l'ingegneria di precisione italiana.
+| Domain | Coverage | Evidence status |
+|---|---|---|
+| General Italian grammar | Introductory reference only | Not benchmarked |
+| Technical terminology | Small curated list | Not independently audited |
+| Medical terminology | Small curated list | Not independently audited |
+| Specialized/industrial terminology | Small curated list | Not independently audited |
+| Musical Italian | Initial pattern corpus | Not validated against a score corpus |
+
+## Integrity and divergence metrics
+
+- **Target Integrity Score:** architectural target only; not measured.
+- **Current Integrity Score:** NOT MEASURED
+- **TDI:** NOT MEASURED
+- **Validation status:** INITIALIZING
+
+No numeric quality score is claimed until a reproducible benchmark and reference annotations exist.
+
+## Scope boundary
+
+The kernel may identify and explain linguistic forms, register, ambiguity and domain-specific instructions. It must preserve uncertainty in damaged or ambiguous source text. Reconstruction of a score, physical interpretation, performance decisions and engineering calculations remain outside this language kernel.
