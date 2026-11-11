@@ -1,0 +1,348 @@
+{
+  "schema_version": "1.0.0",
+  "format_note": "JSON syntax is used as a dependency-free YAML 1.2 subset.",
+  "canonical_definition_status": "BASELINE_FROZEN",
+  "baseline_freeze_scope": "Version 1.0 freezes canonical IDs, entity/relation definitions, semantic types, and relationships only; it does not certify independent mathematical review or language mappings.",
+  "epistemic_model": {
+    "OBJECT": "A geometric entity or entity-role.",
+    "RELATION": "A predicate connecting entities; it is not an entity.",
+    "PROPERTY": "An attribute or invariant of an entity or relation.",
+    "RULE": "An explicitly governed inference; no rule execution is implied by this catalog."
+  },
+  "source_registry": {
+    "AIGS_PACKAGE_01": {
+      "source": "AI Geometry Skill",
+      "document": "docs/PACKAGE_01_GEOMETRIC_VOCABULARY.md",
+      "version": "1.0.0",
+      "source_state": "Provided archive; not copied into this repository",
+      "operational_status": "DECLARATIVE SPECIFICATION ONLY"
+    },
+    "AIGS_PACKAGE_02": {
+      "source": "AI Geometry Skill",
+      "document": "docs/PACKAGE_02_STRUCTURAL_RELATIONS.md",
+      "version": "1.0.0",
+      "source_state": "Provided archive; not copied into this repository",
+      "operational_status": "DECLARATIVE METADATA ONLY"
+    },
+    "AIGS_PACKAGE_03": {
+      "source": "AI Geometry Skill",
+      "document": "docs/PACKAGE_03_GEOMETRIC_PROPERTIES.md",
+      "version": "1.0.0",
+      "source_state": "Provided archive; not copied into this repository",
+      "operational_status": "Declarative properties; not executable rules"
+    },
+    "AIGS_CAPABILITY_MODEL": {
+      "source": "AI Geometry Skill",
+      "document": "docs/CAPABILITY_MODEL.md",
+      "version": "1.0.0",
+      "source_state": "Provided archive; not copied into this repository",
+      "operational_status": "Documented capability boundary; not a local execution result"
+    },
+    "AIGS_PROVENANCE_MODEL": {
+      "source": "AI Geometry Skill",
+      "document": "docs/PROVENANCE_EPISTEMIC_MODEL.md",
+      "version": "1.0.0",
+      "source_state": "Provided archive; not copied into this repository",
+      "operational_status": "Epistemic-status specification"
+    },
+    "AIGS_TRAINING_SCENARIOS": {
+      "source": "AI Geometry Skill",
+      "document": "docs/TRAINING_SCENARIOS.md",
+      "version": "NOT_ASSERTED",
+      "source_state": "Provided archive; T01-T10 reviewed as references only",
+      "operational_status": "Scenarios not imported or executed in this integration"
+    },
+    "AIGS_SEMANTIC_INTERFACE": {
+      "source": "AI Geometry Skill",
+      "document": "docs/SEMANTIC_INTERFACE.md",
+      "version": "NOT_ASSERTED",
+      "source_state": "Provided archive; not copied into this repository",
+      "operational_status": "Command documentation; discrepancies recorded"
+    },
+    "AIGS_SKILL_CONTRACT": {
+      "source": "AI Geometry Skill",
+      "document": "docs/SKILL_CONTRACT.md",
+      "version": "NOT_ASSERTED",
+      "source_state": "Provided archive; not copied into this repository",
+      "operational_status": "Runtime contract documentation; not locally executed"
+    },
+    "AIGS_AAM_GATEWAY": {
+      "source": "AI Geometry Skill",
+      "document": "docs/AAM_GATEWAY.md",
+      "version": "NOT_ASSERTED",
+      "source_state": "Provided archive; not copied into this repository",
+      "operational_status": "Gateway examples; not evidence of multilingual runtime support"
+    },
+    "AIGS_NATURAL_LANGUAGE_ADAPTER": {
+      "source": "AI Geometry Skill",
+      "document": "src/engines/semantic/naturalLanguageAdapter.ts",
+      "version": "NOT_ASSERTED",
+      "source_state": "Provided archive; not copied into this repository",
+      "operational_status": "Source inspected; adapter patterns cover English and Russian only"
+    },
+    "AAM_CANON_EXTENSION": {
+      "source": "This AAM geometry-canon proposal",
+      "document": "geometry_concepts.yaml",
+      "status": "BASELINE_FROZEN_FOR_V1.0; no independent mathematical or linguistic audit claimed"
+    }
+  },
+  "source_boundary": "AI Geometry Skill Packages 01-03 provide declarative source material. Runtime capability data is outside this entity canon and is not a live runtime test.",
+  "concepts": [
+    {
+      "canonical_id": "ENT_POINT",
+      "label_en": "Point",
+      "semantic_type": "OBJECT",
+      "definition": "A location in the Euclidean plane with no spatial extent.",
+      "dimensionality": "0D",
+      "relations": [{"type": "may_have_role", "role": "center_or_boundary_point"}],
+      "properties": ["coordinates may be represented as (x, y)"],
+      "valid_contexts": ["euclidean_2d"],
+      "example": "Point A at (3, 4).",
+      "common_errors": ["Treating coordinates as the point's name or identity."],
+      "definition_source": "AIGS_PACKAGE_01"
+    },
+    {
+      "canonical_id": "ENT_LINE",
+      "label_en": "Line",
+      "semantic_type": "OBJECT",
+      "definition": "An unbounded straight one-dimensional set of points in the Euclidean plane.",
+      "dimensionality": "1D",
+      "relations": [{"type": "passes_through", "target": "ENT_POINT"}],
+      "properties": ["unbounded", "straight"],
+      "valid_contexts": ["euclidean_2d"],
+      "example": "The line through distinct points A and B.",
+      "common_errors": ["Treating a line as a finite segment."],
+      "definition_source": "AIGS_PACKAGE_01"
+    },
+    {
+      "canonical_id": "ENT_SEGMENT",
+      "label_en": "Segment",
+      "semantic_type": "OBJECT",
+      "definition": "The bounded portion of a line between two endpoint points, including both endpoints.",
+      "dimensionality": "1D",
+      "relations": [{"type": "has_endpoint", "target": "ENT_POINT", "count": 2}],
+      "properties": ["bounded", "has a measurable length"],
+      "valid_contexts": ["euclidean_2d"],
+      "example": "Segment AB with endpoints A and B.",
+      "common_errors": ["Confusing the one-dimensional segment with a two-dimensional circular segment region."],
+      "definition_source": "AIGS_PACKAGE_01"
+    },
+    {
+      "canonical_id": "ENT_RAY",
+      "label_en": "Ray",
+      "semantic_type": "OBJECT",
+      "definition": "A half-line with one endpoint and extending without bound in one direction.",
+      "dimensionality": "1D",
+      "relations": [{"type": "has_origin", "target": "ENT_POINT"}],
+      "properties": ["one endpoint", "unbounded in one direction"],
+      "valid_contexts": ["euclidean_2d"],
+      "example": "A ray with origin A passing through B.",
+      "common_errors": ["Treating a ray as a finite segment or as a directed vector without its geometric locus."],
+      "definition_source": "AAM_CANON_EXTENSION"
+    },
+    {
+      "canonical_id": "ENT_CIRCLE_BOUNDARY",
+      "label_en": "CircleBoundary",
+      "semantic_type": "OBJECT",
+      "definition": "The one-dimensional closed locus of points at a fixed positive distance from a center point.",
+      "dimensionality": "1D",
+      "relations": [{"type": "bounds", "target": "ENT_DISK"}],
+      "relation_source": "AIGS_PACKAGE_02",
+      "properties": ["closed curve", "all boundary points are equidistant from the center"],
+      "valid_contexts": ["euclidean_2d"],
+      "example": "The circumference with center O and radius r.",
+      "common_errors": ["Using the unqualified word circle for either the boundary or its filled region."],
+      "definition_source": "AIGS_PACKAGE_01"
+    },
+    {
+      "canonical_id": "ENT_DISK",
+      "label_en": "Disk",
+      "semantic_type": "OBJECT",
+      "definition": "The closed two-dimensional region consisting of a circle's boundary and all points inside it.",
+      "dimensionality": "2D",
+      "relations": [{"type": "bounded_by", "target": "ENT_CIRCLE_BOUNDARY"}],
+      "relation_source": "AIGS_PACKAGE_02",
+      "properties": ["includes its boundary", "has area"],
+      "valid_contexts": ["euclidean_2d"],
+      "example": "The filled region of radius r centered at O.",
+      "common_errors": ["Equating the filled disk with its one-dimensional circle boundary."],
+      "definition_source": "AIGS_PACKAGE_01"
+    },
+    {
+      "canonical_id": "ENT_TRIANGLE",
+      "label_en": "Triangle",
+      "semantic_type": "OBJECT",
+      "definition": "A simple closed plane figure bounded by three segments joining three non-collinear vertices.",
+      "dimensionality": "2D",
+      "relations": [{"type": "bounded_by", "target": "ENT_SIDE", "count": 3}],
+      "properties": ["three vertices", "three sides"],
+      "valid_contexts": ["euclidean_2d"],
+      "example": "Triangle ABC with non-collinear vertices A, B, and C.",
+      "common_errors": ["Assuming three labels alone determine coordinates or a unique construction."],
+      "definition_source": "AAM_CANON_EXTENSION"
+    },
+    {
+      "canonical_id": "ENT_SQUARE",
+      "label_en": "Square",
+      "semantic_type": "OBJECT",
+      "definition": "A quadrilateral with four equal sides and four right interior angles.",
+      "dimensionality": "2D",
+      "relations": [{"type": "is_special_case_of", "target": "ENT_RECTANGLE"}],
+      "properties": ["four equal sides", "four right angles"],
+      "valid_contexts": ["euclidean_2d"],
+      "example": "A square with side length s.",
+      "common_errors": ["Using square as a synonym for any rectangle or any quadrilateral."],
+      "definition_source": "AAM_CANON_EXTENSION"
+    },
+    {
+      "canonical_id": "ENT_RECTANGLE",
+      "label_en": "Rectangle",
+      "semantic_type": "OBJECT",
+      "definition": "A quadrilateral with four right interior angles; its opposite sides are equal and parallel.",
+      "dimensionality": "2D",
+      "relations": [{"type": "is_special_case_of", "target": "ENT_POLYGON"}],
+      "properties": ["four right angles", "opposite sides equal"],
+      "valid_contexts": ["euclidean_2d"],
+      "example": "A rectangle with adjacent side lengths a and b.",
+      "common_errors": ["Assuming all four sides must be equal; that condition defines a square."],
+      "definition_source": "AAM_CANON_EXTENSION"
+    },
+    {
+      "canonical_id": "ENT_POLYGON",
+      "label_en": "Polygon",
+      "semantic_type": "OBJECT",
+      "definition": "A simple closed plane figure bounded by a finite sequence of at least three segments joined end-to-end.",
+      "dimensionality": "2D",
+      "relations": [{"type": "bounded_by", "target": "ENT_SIDE", "count": "at_least_3"}],
+      "properties": ["finite number of sides", "closed", "simple"],
+      "valid_contexts": ["euclidean_2d"],
+      "example": "A simple pentagon represented by five connected segments.",
+      "common_errors": ["Assuming Polygon is an executable compound primitive in the Geometry Skill."],
+      "definition_source": "AAM_CANON_EXTENSION"
+    },
+    {
+      "canonical_id": "ENT_ANGLE",
+      "label_en": "Angle",
+      "semantic_type": "OBJECT",
+      "definition": "A geometric configuration of two rays sharing a common endpoint; a chosen interior or reflex region is required when the measure is intended.",
+      "dimensionality": "1D boundary rays; scalar measure is dimensionless",
+      "relations": [{"type": "has_vertex", "target": "ENT_VERTEX"}, {"type": "formed_by", "target": "ENT_RAY", "count": 2}],
+      "properties": ["measure is a separate scalar property", "interior/reflex interpretation may require context"],
+      "valid_contexts": ["euclidean_2d", "polygon_interior_angle", "directed_angle_only_when_explicit"],
+      "example": "The interior angle at vertex B formed by rays BA and BC.",
+      "common_errors": ["Equating an intrinsic vertex angle with an extrinsic polar angle or assuming a unique angle without orientation/context."],
+      "definition_source": "AAM_CANON_EXTENSION"
+    },
+    {
+      "canonical_id": "ENT_VERTEX",
+      "label_en": "Vertex",
+      "semantic_type": "OBJECT",
+      "definition": "A point serving as the endpoint shared by adjacent sides in a polygonal figure.",
+      "dimensionality": "0D",
+      "relations": [{"type": "vertex_of", "target": "ENT_POLYGON"}],
+      "properties": ["is a role of a point, not a distinct spatial primitive"],
+      "valid_contexts": ["euclidean_2d", "polygon"],
+      "example": "B is a vertex of triangle ABC.",
+      "common_errors": ["Treating the vertex role as a different geometric dimension or confusing it with the angle measure."],
+      "definition_source": "AAM_CANON_EXTENSION"
+    },
+    {
+      "canonical_id": "ENT_SIDE",
+      "label_en": "Side",
+      "semantic_type": "OBJECT",
+      "definition": "A segment serving as one boundary edge between adjacent vertices of a polygon.",
+      "dimensionality": "1D",
+      "relations": [{"type": "side_of", "target": "ENT_POLYGON"}, {"type": "is_role_of", "target": "ENT_SEGMENT"}],
+      "relation_source": "AIGS_PACKAGE_02",
+      "properties": ["bounded", "context-dependent polygon role"],
+      "valid_contexts": ["polygon"],
+      "example": "Segment AB is a side of triangle ABC when A and B are adjacent vertices.",
+      "common_errors": ["Treating every side as a circle chord; it is a chord only when its endpoints lie on the same circle boundary."],
+      "definition_source": "AAM_CANON_EXTENSION"
+    },
+    {
+      "canonical_id": "REL_PARALLEL",
+      "label_en": "Parallel",
+      "semantic_type": "RELATION",
+      "definition": "A relation between coplanar linear entities whose direction vectors are parallel; coincident operands require an explicit policy.",
+      "dimensionality": "Not an entity dimension; relates planar linear entities",
+      "relations": [{"type": "applies_to", "target": "ENT_LINE"}, {"type": "may_apply_to", "target": "ENT_SEGMENT"}],
+      "properties": ["coincident-input convention is unresolved unless explicitly stated"],
+      "valid_contexts": ["euclidean_2d"],
+      "example": "Line l is parallel to line m.",
+      "common_errors": ["Treating parallelism as an object, or silently deciding whether coincident lines count as parallel."],
+      "definition_source": "AAM_CANON_EXTENSION"
+    },
+    {
+      "canonical_id": "REL_PERPENDICULAR",
+      "label_en": "Perpendicular",
+      "semantic_type": "RELATION",
+      "definition": "A relation between planar linear entities that meet at a right angle.",
+      "dimensionality": "Not an entity dimension; relates planar linear entities",
+      "relations": [{"type": "applies_to", "target": "ENT_LINE"}, {"type": "may_apply_to", "target": "ENT_SEGMENT"}],
+      "properties": ["right-angle relation"],
+      "valid_contexts": ["euclidean_2d"],
+      "example": "Line l is perpendicular to segment AB at their intersection.",
+      "common_errors": ["Treating perpendicularity as an object or as an arbitrary angle-measurement feature."],
+      "definition_source": "AAM_CANON_EXTENSION"
+    },
+    {
+      "canonical_id": "REL_INTERSECTION",
+      "label_en": "Intersection",
+      "semantic_type": "RELATION",
+      "definition": "The set of points common to two geometric entities; a single-point result is a possible outcome, not the relation itself.",
+      "dimensionality": "Not an entity dimension; result dimension depends on operands",
+      "relations": [{"type": "relates_entities", "operands": "two_geometry_entities"}],
+      "properties": ["may be empty, one point, or multiple points depending on operands"],
+      "valid_contexts": ["euclidean_2d"],
+      "example": "The intersection of a line and a circle may contain zero, one, or two points.",
+      "common_errors": ["Treating an intersection relation as necessarily one point or as a live dependency after materialization."],
+      "definition_source": "AAM_CANON_EXTENSION"
+    },
+    {
+      "canonical_id": "ENT_RADIUS",
+      "label_en": "Radius",
+      "semantic_type": "OBJECT",
+      "definition": "A segment joining the center of a circle to a point on its boundary; radius length is a separate scalar property.",
+      "dimensionality": "1D",
+      "relations": [{"type": "connects_role", "from": "center_point", "to": "boundary_point", "of": "ENT_CIRCLE_BOUNDARY"}],
+      "relation_source": "AIGS_PACKAGE_02",
+      "properties": ["segment length is the radius measure", "all radii of one circle have equal length"],
+      "property_source": "AIGS_PACKAGE_03",
+      "valid_contexts": ["euclidean_2d", "circle"],
+      "example": "Segment OP is a radius when O is the center and P lies on the boundary.",
+      "common_errors": ["Confusing the radius segment with the scalar radius value."],
+      "definition_source": "AIGS_PACKAGE_01"
+    },
+    {
+      "canonical_id": "ENT_DIAMETER",
+      "label_en": "Diameter",
+      "semantic_type": "OBJECT",
+      "definition": "A chord whose endpoints lie on one circle boundary and whose segment passes through that circle's center.",
+      "dimensionality": "1D",
+      "relations": [{"type": "is_special_case_of", "target": "ENT_SEGMENT"}, {"type": "passes_through_center_of", "target": "ENT_CIRCLE_BOUNDARY"}],
+      "relation_source": "AIGS_PACKAGE_02",
+      "properties": ["length equals twice the radius length in Euclidean geometry"],
+      "property_source": "AIGS_PACKAGE_03",
+      "valid_contexts": ["euclidean_2d", "circle"],
+      "example": "Segment AB is a diameter if A and B lie on the circle boundary and AB passes through O.",
+      "common_errors": ["Inferring diameter status from length alone or treating a diameter predicate as a verified runtime capability."],
+      "definition_source": "AIGS_PACKAGE_01"
+    }
+  ],
+  "semantic_guard": {
+    "must_remain_distinct": [
+      ["ENT_CIRCLE_BOUNDARY", "ENT_DISK"],
+      ["ENT_LINE", "ENT_SEGMENT"],
+      ["ENT_LINE", "ENT_RAY"],
+      ["ENT_SEGMENT", "ENT_RAY"],
+      ["ENT_SQUARE", "ENT_RECTANGLE"],
+      ["ENT_ANGLE", "EXTRINSIC_POLAR_ANGLE"],
+      ["REL_PARALLEL", "OBJECT"],
+      ["REL_PERPENDICULAR", "OBJECT"],
+      ["REL_INTERSECTION", "OBJECT"]
+    ],
+    "ambiguity_policy": "Return AMBIGUOUS or CLARIFY_REQUIRED when lexical or geometric context does not determine one concept or action. Never resolve by an undocumented heuristic.",
+    "rule_execution": "No theorem, metric property, or inference rule is executable merely because it appears in this catalog."
+  }
+}

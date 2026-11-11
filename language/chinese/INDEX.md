@@ -12,6 +12,7 @@ This directory contains the Chinese kernel metadata, source-aware pattern record
 - [engineering/technical_terms.md](./engineering/technical_terms.md) — technical-axis glossary.
 - [engineering/medical_terms.md](./engineering/medical_terms.md) — medical-axis glossary.
 - [engineering/specialized_terms.md](./engineering/specialized_terms.md) — specialized-axis glossary.
+- [engineering/geometry_canon.md](./engineering/geometry_canon.md) — proposed shared geometry mapping; terminology is NOT_VERIFIED.
 
 ## Canonical historical patterns
 

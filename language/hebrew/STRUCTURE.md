@@ -10,7 +10,7 @@
 | Semantics | Lexical senses, polysemy and cultural concepts | No canonical semantic registry |
 | Context | Ellipsis and ambiguity handling | Policy only; unresolved cases remain UNKNOWN |
 | Historical | Biblical, Mishnaic, Talmudic, Medieval and Modern Hebrew | Separate research scopes; not one shared norm |
-| Engineering | SOL anchors and technical-language examples | AAM proposal, not language-specific validation |
+| Engineering | SOL anchors, technical-language examples, and [shared geometry-canon mapping](engineering/geometry_canon.md) | AAM proposal; geometry terms are not language-validated |
 | Sacred / cultural | Tanakh, Torah, Talmud, Zohar, Shekhinah, Shabbat and Kashrut | Concept index only; no numerical sacredness score |
 | Core utilities | NFC analysis normalization, explicit NFC/NFD normalization, preservation of original text and Hebrew marks, whitespace tokenization, first-strong direction metadata, JSON-compatible result | Implemented and unit-tested; not linguistic parsing |
 | NLP adapter | Optional Stanza Hebrew UD pipeline mapping to token, lemma, POS, morphology, and dependency fields | Adapter implemented; Stanza and the Hebrew model are not installed in the current environment |

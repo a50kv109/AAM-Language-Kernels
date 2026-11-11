@@ -7,7 +7,7 @@ Common clause-order patterns and particle-driven structure, with explicit recogn
 Kanji as semantic nodes and context-sensitive readings, with lexical distinctions treated as a research layer rather than a final corpus-validated catalogue.
 
 ## L3 - ENGINEERING SEMANTICS
-Mapping of selected SOL anchors and technical terms in a proposed engineering layer, not a fully measured production-grade model.
+Mapping of selected SOL anchors and technical terms in a proposed engineering layer, including the [shared geometry-canon mapping](engineering/geometry_canon.md); geometry terms are NOT_VERIFIED and are not a parser or executor.
 
 ## L4 - CONTEXT & OMISSION RESOLUTION
 Explicit handling of omitted subjects, particles, and context-dependent meaning under `ENGINEERED_IGNORANCE`, without inventing unstated actors or causal assumptions.

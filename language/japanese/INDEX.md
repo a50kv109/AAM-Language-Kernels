@@ -9,6 +9,7 @@
 - **Grammar (L1)**: Core syntax, particles, and basic morphologies for an introductory baseline.
 - **Kanji (L2)**: Multi-dimensional lexical mapping and context-dependent readings as a research layer.
 - **Engineering (L3)**: SOL anchors mapping for SOURCE, CONSTRAINT, FLOW, OBSERVATION, etc.
+- **Shared geometry canon**: [proposed mapping](engineering/geometry_canon.md); Japanese terminology remains NOT_VERIFIED.
 - **Context (L4)**: Omission resolution and ENGINEERED_IGNORANCE handling as a proposed high-context model.
 
 ## Research extension layer

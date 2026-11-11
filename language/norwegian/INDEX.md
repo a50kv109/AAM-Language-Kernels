@@ -11,3 +11,4 @@ Dette dokumentet fungerer som inngangsporten til det norske språkkjernen under 
 - [Engineering / Technical Terms](./engineering/technical_terms.md) — Akse 8 (Offshore, subsea, prosess).
 - [Engineering / Medical Terms](./engineering/medical_terms.md) — Akse 9 (Helse-teknologi, akuttmedisin).
 - [Engineering / Specialized Terms](./engineering/specialized_terms.md) — Akse 10 (Maritim automasjon, bærekraft).
+- [Shared geometry mapping](./engineering/geometry_canon.md) — proposed; Norwegian terminology is NOT_VERIFIED.

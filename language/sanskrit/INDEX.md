@@ -42,3 +42,4 @@ include: ../../../MASTER_AXIS10_CONFIG.md
 ## Integration Role
 - Sanskrit is used as a reference semantic gateway for horizontal consensus checks across language kernels.
 - Output semantics are compatible with SOL-tags and Engineering Core routing.
+- Shared geometry mapping: [Engineering Axis link](engineering/geometry_canon.md) — proposal only; Sanskrit terminology is NOT_VERIFIED.
