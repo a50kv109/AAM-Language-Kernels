@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0.0",
+  "language_id": "he",
+  "language_name": "Hebrew",
+  "mapping_status": "PROPOSED",
+  "entries": [
+    {"canonical_id": "ENT_POINT", "term": "נקודה", "term_source": "user_supplied_candidate", "transliteration": null, "grammatical_forms": [], "context_variants": [], "translation_validation_status": "NOT_VERIFIED"},
+    {"canonical_id": "ENT_LINE", "term": "ישר", "term_source": "user_supplied_candidate", "transliteration": null, "grammatical_forms": [], "context_variants": [], "translation_validation_status": "NOT_VERIFIED"},
+    {"canonical_id": "ENT_SEGMENT", "term": "קטע", "term_source": "user_supplied_candidate", "transliteration": null, "grammatical_forms": [], "context_variants": [], "translation_validation_status": "NOT_VERIFIED"},
+    {"canonical_id": "ENT_RAY", "term": "קרן", "term_source": "assistant_draft_unverified", "transliteration": null, "grammatical_forms": [], "context_variants": [], "translation_validation_status": "NOT_VERIFIED"},
+    {"canonical_id": "ENT_CIRCLE_BOUNDARY", "term": "מעגל", "term_source": "user_supplied_candidate", "transliteration": null, "grammatical_forms": [], "context_variants": [], "translation_validation_status": "NOT_VERIFIED"},
+    {"canonical_id": "ENT_DISK", "term": "עיגול", "term_source": "assistant_draft_unverified", "transliteration": null, "grammatical_forms": [], "context_variants": [], "translation_validation_status": "NOT_VERIFIED"},
+    {"canonical_id": "ENT_TRIANGLE", "term": "משולש", "term_source": "user_supplied_candidate", "transliteration": null, "grammatical_forms": [], "context_variants": [], "translation_validation_status": "NOT_VERIFIED"},
+    {"canonical_id": "ENT_SQUARE", "term": "ריבוע", "term_source": "user_supplied_candidate", "transliteration": null, "grammatical_forms": [], "context_variants": [], "translation_validation_status": "NOT_VERIFIED"},
+    {"canonical_id": "ENT_RECTANGLE", "term": "מלבן", "term_source": "assistant_draft_unverified", "transliteration": null, "grammatical_forms": [], "context_variants": [], "translation_validation_status": "NOT_VERIFIED"},
+    {"canonical_id": "ENT_POLYGON", "term": "מצולע", "term_source": "user_supplied_candidate", "transliteration": null, "grammatical_forms": [], "context_variants": [], "translation_validation_status": "NOT_VERIFIED"},
+    {"canonical_id": "ENT_ANGLE", "term": "זווית", "term_source": "user_supplied_candidate", "transliteration": null, "grammatical_forms": [], "context_variants": [], "translation_validation_status": "NOT_VERIFIED"},
+    {"canonical_id": "ENT_VERTEX", "term": "קודקוד", "term_source": "assistant_draft_unverified", "transliteration": null, "grammatical_forms": [], "context_variants": [], "translation_validation_status": "NOT_VERIFIED"},
+    {"canonical_id": "ENT_SIDE", "term": "צלע", "term_source": "assistant_draft_unverified", "transliteration": null, "grammatical_forms": [], "context_variants": [], "translation_validation_status": "NOT_VERIFIED"},
+    {"canonical_id": "REL_PARALLEL", "term": "מקבילות", "term_source": "assistant_draft_unverified", "transliteration": null, "grammatical_forms": [], "context_variants": [], "translation_validation_status": "NOT_VERIFIED"},
+    {"canonical_id": "REL_PERPENDICULAR", "term": "ניצבות", "term_source": "assistant_draft_unverified", "transliteration": null, "grammatical_forms": [], "context_variants": [], "translation_validation_status": "NOT_VERIFIED"},
+    {"canonical_id": "REL_INTERSECTION", "term": "חיתוך", "term_source": "assistant_draft_unverified", "transliteration": null, "grammatical_forms": [], "context_variants": [], "translation_validation_status": "NOT_VERIFIED"},
+    {"canonical_id": "ENT_RADIUS", "term": "רדיוס", "term_source": "assistant_draft_unverified", "transliteration": null, "grammatical_forms": [], "context_variants": [], "translation_validation_status": "NOT_VERIFIED"},
+    {"canonical_id": "ENT_DIAMETER", "term": "קוטר", "term_source": "assistant_draft_unverified", "transliteration": null, "grammatical_forms": [], "context_variants": [], "translation_validation_status": "NOT_VERIFIED"}
+  ]
+}

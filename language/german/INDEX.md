@@ -8,6 +8,7 @@ Dieses Kernel ist nach dem **AXIS-10 Standard (AAM-V2)** konzipiert. Es verbinde
 1.  **[Passport (Pass)](passport.md)** - Technische Spezifikationen und AXIS-10 Konfiguration.
 2.  **[Ground Truth Matrix](ground_truth_matrix.md)** - Semantische Anker und SOL-Tags.
 3.  **[Engineering Section](engineering/technical_terms.md)** - Spezialisierte technische Achsen (8, 9, 10).
+4.  **[Shared geometry mapping](engineering/geometry_canon.md)** - proposed canonical IDs; German terms are NOT_VERIFIED.
 
 ### 📈 STATUS
 - **Architecture:** AAM-V2.20-AXIS10 ✅

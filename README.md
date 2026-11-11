@@ -4,6 +4,7 @@ AAM-Language-Kernels: Модульная архитектура языковог
 
 Документация:
 - Основная архитектура: [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)
+- Общий геометрический канон AAM (предложение; языковые соответствия не проверены): [engineering/geometry_canon/GEOMETRY_CANON.md](engineering/geometry_canon/GEOMETRY_CANON.md)
 
 Доступные языковые ядра:
 - 🇬🇧 Английский (eng:10 - Golden Standard)

@@ -1,0 +1,278 @@
+{
+  "schema_version": "1.0.0",
+  "benchmark_status": "FIXTURES_ONLY_NOT_EXECUTED",
+  "language_validation_status": "NOT_RUN",
+  "geometry_skill_execution_status": "NOT_RUN",
+  "epistemic_status_model": "AIGS_PROVENANCE_MODEL v1.0.0",
+  "candidate_utterance_epistemic_status": "HYPOTHESIS",
+  "expected_intent_epistemic_status": "HYPOTHESIS",
+  "configured_scenario_values_epistemic_status": "GIVEN_FIXTURE_NOT_EXECUTED",
+  "geometry_result_epistemic_status": "NOT_RUN",
+  "source_ids": ["AIGS_CAPABILITY_MODEL", "AIGS_PROVENANCE_MODEL", "AIGS_TRAINING_SCENARIOS", "AIGS_SEMANTIC_INTERFACE", "AIGS_SKILL_CONTRACT", "AIGS_AAM_GATEWAY", "AIGS_NATURAL_LANGUAGE_ADAPTER"],
+  "languages": ["en", "ru", "uk", "he", "fr", "de", "it", "no", "ka", "zh", "ja", "sa"],
+  "fixture_contract": "Candidate utterances and expected intents are HYPOTHESIS, not parser results. Scenario values are GIVEN only as test fixtures. No item is TOOL-VERIFIED, DERIVED, INVALID, or VANISHED because no Geometry Skill execution occurred.",
+  "cases": [
+    {
+      "case_id": "GEO-POINT-001",
+      "candidate_utterances": {
+        "en": "Create point P at (3, 4).",
+        "ru": "Создай точку P с координатами (3, 4).",
+        "uk": "Створи точку P з координатами (3, 4).",
+        "he": "צור נקודה P בקואורדינטות (3, 4).",
+        "fr": "Créer le point P de coordonnées (3, 4).",
+        "de": "Erzeuge den Punkt P mit den Koordinaten (3, 4).",
+        "it": "Crea il punto P con coordinate (3, 4).",
+        "no": "Opprett punkt P med koordinatene (3, 4).",
+        "ka": "შექმენი P წერტილი კოორდინატებით (3, 4).",
+        "zh": "创建坐标为 (3, 4) 的点 P。",
+        "ja": "座標 (3, 4) に点 P を作成する。",
+        "sa": "निर्देशाङ्कयोः (3, 4) P बिन्दुं रचय।"
+      },
+      "expected_semantic_intent": {"kind": "SEMANTIC_COMMAND", "command": "DRAW_POINT", "parameters": {"x": 3, "y": 4, "name": "P"}},
+      "intent_fixture_status": "EXPECTED_NOT_EXECUTED",
+      "geometry_skill_capability_status": "DOCUMENTED_SUPPORTED",
+      "geometry_skill_execution_status": "NOT_RUN"
+    },
+    {
+      "case_id": "GEO-LINE-001",
+      "candidate_utterances": {
+        "en": "Draw the line through points A and B.",
+        "ru": "Проведи прямую через точки A и B.",
+        "uk": "Проведи пряму через точки A і B.",
+        "he": "העבר ישר דרך הנקודות A ו-B.",
+        "fr": "Trace la droite passant par les points A et B.",
+        "de": "Zeichne die Gerade durch die Punkte A und B.",
+        "it": "Traccia la retta passante per i punti A e B.",
+        "no": "Tegn linjen gjennom punktene A og B.",
+        "ka": "გაავლე წრფე A და B წერტილებზე.",
+        "zh": "画一条经过点 A 和点 B 的直线。",
+        "ja": "点 A と点 B を通る直線を引く。",
+        "sa": "A तथा B बिन्दुभ्यां गच्छन्तीं रेखां रचय।"
+      },
+      "expected_semantic_intent": {"kind": "SEMANTIC_COMMAND", "command": "DRAW_LINE", "parameters": {"p1Id": "A", "p2Id": "B"}},
+      "preconditions": ["Points A and B exist and are distinct."],
+      "intent_fixture_status": "EXPECTED_NOT_EXECUTED",
+      "geometry_skill_capability_status": "DOCUMENTED_SUPPORTED",
+      "geometry_skill_execution_status": "NOT_RUN"
+    },
+    {
+      "case_id": "GEO-SEGMENT-001",
+      "candidate_utterances": {
+        "en": "Create segment AB.",
+        "ru": "Создай отрезок AB.",
+        "uk": "Створи відрізок AB.",
+        "he": "צור את הקטע AB.",
+        "fr": "Crée le segment AB.",
+        "de": "Erzeuge die Strecke AB.",
+        "it": "Crea il segmento AB.",
+        "no": "Opprett linjestykket AB.",
+        "ka": "შექმენი AB მონაკვეთი.",
+        "zh": "创建线段 AB。",
+        "ja": "線分 AB を作成する。",
+        "sa": "AB रेखाखण्डं रचय।"
+      },
+      "expected_semantic_intent": {"kind": "SEMANTIC_COMMAND", "command": "DRAW_SEGMENT", "parameters": {"p1Id": "A", "p2Id": "B"}},
+      "preconditions": ["Points A and B exist."],
+      "intent_fixture_status": "EXPECTED_NOT_EXECUTED",
+      "geometry_skill_capability_status": "DOCUMENTED_SUPPORTED",
+      "geometry_skill_execution_status": "NOT_RUN"
+    },
+    {
+      "case_id": "GEO-CIRCLE-001",
+      "candidate_utterances": {
+        "en": "Draw a circle with center O and radius 5.",
+        "ru": "Построй окружность с центром O и радиусом 5.",
+        "uk": "Побудуй коло з центром O і радіусом 5.",
+        "he": "צייר מעגל שמרכזו O והרדיוס שלו 5.",
+        "fr": "Trace un cercle de centre O et de rayon 5.",
+        "de": "Zeichne einen Kreis mit Mittelpunkt O und Radius 5.",
+        "it": "Disegna una circonferenza con centro O e raggio 5.",
+        "no": "Tegn en sirkel med sentrum O og radius 5.",
+        "ka": "დახაზე O ცენტრისა და 5 რადიუსის მქონე წრეწირი.",
+        "zh": "画一个以 O 为圆心、半径为 5 的圆。",
+        "ja": "中心 O、半径 5 の円を描く。",
+        "sa": "O केन्द्रेण 5 त्रिज्यया च वृत्तं रचय।"
+      },
+      "expected_semantic_intent": {"kind": "SEMANTIC_COMMAND", "command": "DRAW_CIRCLE", "parameters": {"centerId": "O", "radius": 5}},
+      "preconditions": ["Point O exists; radius 5 is interpreted in the skill's coordinate units."],
+      "target_canonical_id": "ENT_CIRCLE_BOUNDARY",
+      "intent_fixture_status": "EXPECTED_NOT_EXECUTED",
+      "geometry_skill_capability_status": "DOCUMENTED_SUPPORTED_AS_CIRCLE_PRIMITIVE",
+      "geometry_skill_execution_status": "NOT_RUN"
+    },
+    {
+      "case_id": "GEO-PARALLEL-001",
+      "candidate_utterances": {
+        "en": "Check whether line L is parallel to segment BC.",
+        "ru": "Проверь, параллельна ли прямая L отрезку BC.",
+        "uk": "Перевір, чи паралельна пряма L відрізку BC.",
+        "he": "בדוק אם הישר L מקביל לקטע BC.",
+        "fr": "Vérifie si la droite L est parallèle au segment BC.",
+        "de": "Prüfe, ob die Gerade L parallel zur Strecke BC ist.",
+        "it": "Verifica se la retta L è parallela al segmento BC.",
+        "no": "Kontroller om linjen L er parallell med linjestykket BC.",
+        "ka": "შეამოწმე, პარალელურია თუ არა L წრფე BC მონაკვეთის მიმართ.",
+        "zh": "检查直线 L 是否与线段 BC 平行。",
+        "ja": "直線 L が線分 BC と平行か確認する。",
+        "sa": "L रेखा BC रेखाखण्डेन समान्तरा अस्ति वा इति परीक्षस्व।"
+      },
+      "expected_semantic_intent": {"kind": "SEMANTIC_COMMAND", "command": "VERIFY_RELATION", "parameters": {"relation": "PARALLEL", "subject": "L", "reference": "BC"}},
+      "preconditions": ["Line L and segment BC exist in the current geometry state."],
+      "intent_fixture_status": "EXPECTED_NOT_EXECUTED",
+      "geometry_skill_capability_status": "DOCUMENTED_SUPPORTED_INTERFACE_MISMATCH",
+      "geometry_skill_execution_status": "NOT_RUN"
+    },
+    {
+      "case_id": "GEO-PERPENDICULAR-001",
+      "candidate_utterances": {
+        "en": "Check whether line L is perpendicular to segment BC.",
+        "ru": "Проверь, перпендикулярна ли прямая L отрезку BC.",
+        "uk": "Перевір, чи перпендикулярна пряма L відрізку BC.",
+        "he": "בדוק אם הישר L ניצב לקטע BC.",
+        "fr": "Vérifie si la droite L est perpendiculaire au segment BC.",
+        "de": "Prüfe, ob die Gerade L senkrecht zur Strecke BC ist.",
+        "it": "Verifica se la retta L è perpendicolare al segmento BC.",
+        "no": "Kontroller om linjen L står vinkelrett på linjestykket BC.",
+        "ka": "შეამოწმე, მართობულია თუ არა L წრფე BC მონაკვეთის მიმართ.",
+        "zh": "检查直线 L 是否与线段 BC 垂直。",
+        "ja": "直線 L が線分 BC と垂直か確認する。",
+        "sa": "L रेखा BC रेखाखण्डेन लम्बा अस्ति वा इति परीक्षस्व।"
+      },
+      "expected_semantic_intent": {"kind": "SEMANTIC_COMMAND", "command": "VERIFY_RELATION", "parameters": {"relation": "PERPENDICULAR", "subject": "L", "reference": "BC"}},
+      "preconditions": ["Line L and segment BC exist in the current geometry state."],
+      "intent_fixture_status": "EXPECTED_NOT_EXECUTED",
+      "geometry_skill_capability_status": "DOCUMENTED_SUPPORTED_INTERFACE_MISMATCH",
+      "geometry_skill_execution_status": "NOT_RUN"
+    },
+    {
+      "case_id": "GEO-ANGLE-MEASURE-001",
+      "candidate_utterances": {
+        "en": "Measure the configured angle at vertex C.",
+        "ru": "Измерь заданный угол при вершине C.",
+        "uk": "Виміряй заданий кут при вершині C.",
+        "he": "מדוד את הזווית שהוגדרה בקודקוד C.",
+        "fr": "Mesure l'angle configuré au sommet C.",
+        "de": "Miss den konfigurierten Winkel am Scheitelpunkt C.",
+        "it": "Misura l'angolo configurato nel vertice C.",
+        "no": "Mål den konfigurerte vinkelen ved toppunkt C.",
+        "ka": "გაზომე C წვეროში განსაზღვრული კუთხე.",
+        "zh": "测量已配置的顶点 C 处的角。",
+        "ja": "頂点 C に設定された角を測定する。",
+        "sa": "C शीर्षे विन्यस्तं कोणं मापय।"
+      },
+      "expected_semantic_intent": {"kind": "SEMANTIC_COMMAND", "command": "GET_MEASUREMENTS", "parameters": {"filter": {"target": "angle_C"}}},
+      "preconditions": ["The current configured triangle exposes a measurement target angle_C."],
+      "intent_fixture_status": "EXPECTED_NOT_EXECUTED",
+      "geometry_skill_capability_status": "PARTIAL_CONFIGURED_TRIANGLE_ONLY",
+      "geometry_skill_execution_status": "NOT_RUN",
+      "limitation": "The skill documents measurements for configured entities but does not support arbitrary ANGLE_VALUE measurement."
+    },
+    {
+      "case_id": "GEO-INTERSECTION-001",
+      "candidate_utterances": {
+        "en": "Find the intersection of line L and circle C.",
+        "ru": "Найди пересечение прямой L и окружности C.",
+        "uk": "Знайди перетин прямої L та кола C.",
+        "he": "מצא את החיתוך של הישר L והמעגל C.",
+        "fr": "Trouve l'intersection de la droite L et du cercle C.",
+        "de": "Finde den Schnitt von Gerade L und Kreis C.",
+        "it": "Trova l'intersezione tra la retta L e la circonferenza C.",
+        "no": "Finn skjæringen mellom linjen L og sirkelen C.",
+        "ka": "იპოვე L წრფისა და C წრეწირის გადაკვეთა.",
+        "zh": "求直线 L 与圆 C 的交点。",
+        "ja": "直線 L と円 C の交点を求める。",
+        "sa": "L रेखायाः C वृत्तस्य च प्रतिच्छेदं अन्विष्य।"
+      },
+      "expected_semantic_intent": {"kind": "GEOMETRY_API_CALL", "api": "HeadlessGeometrySession.intersect", "parameters": {"id1": "L", "id2": "C"}},
+      "preconditions": ["Line L and circle C exist in the current geometry state."],
+      "intent_fixture_status": "EXPECTED_NOT_EXECUTED",
+      "geometry_skill_capability_status": "DOCUMENTED_SUPPORTED_WITH_SNAPSHOT_LIMIT",
+      "geometry_skill_execution_status": "NOT_RUN",
+      "limitation": "Intersection results are documented as materialized snapshots, not reactive dependencies."
+    },
+    {
+      "case_id": "GEO-TRIANGLE-CLARIFY-001",
+      "candidate_utterances": {
+        "en": "Construct triangle ABC.",
+        "ru": "Построй треугольник ABC.",
+        "uk": "Побудуй трикутник ABC.",
+        "he": "בנה משולש ABC.",
+        "fr": "Construis le triangle ABC.",
+        "de": "Konstruiere das Dreieck ABC.",
+        "it": "Costruisci il triangolo ABC.",
+        "no": "Konstruer trekanten ABC.",
+        "ka": "ააგე ABC სამკუთხედი.",
+        "zh": "构造三角形 ABC。",
+        "ja": "三角形 ABC を作図する。",
+        "sa": "ABC त्रिभुजं रचय।"
+      },
+      "expected_semantic_intent": {"kind": "CLARIFICATION_REQUIRED", "reason": "No coordinates, side/angle constraints, existing point references, or construction context are supplied."},
+      "intent_fixture_status": "EXPECTED_NOT_EXECUTED",
+      "geometry_skill_capability_status": "NO_GENERIC_COMPOUND_POLYGON_COMMAND_DOCUMENTED",
+      "geometry_skill_execution_status": "NOT_RUN"
+    }
+  ],
+  "ambiguity_cases": [
+    {
+      "case_id": "GEO-AMBIG-CIRCLE-001",
+      "candidate_utterances": {
+        "en": "circle",
+        "ru": "круг",
+        "uk": "коло",
+        "he": "מעגל",
+        "fr": "cercle",
+        "de": "Kreis",
+        "it": "cerchio",
+        "no": "sirkel",
+        "ka": "წრე",
+        "zh": "圆",
+        "ja": "円",
+        "sa": "वृत्तम्"
+      },
+      "candidate_concepts": ["ENT_CIRCLE_BOUNDARY", "ENT_DISK"],
+      "expected_resolution": "AMBIGUOUS",
+      "status": "EXPECTED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "GEO-AMBIG-ANGLE-001",
+      "candidate_utterances": {
+        "en": "angle at C",
+        "ru": "угол при C",
+        "uk": "кут при C",
+        "he": "זווית בקודקוד C",
+        "fr": "angle au sommet C",
+        "de": "Winkel bei C",
+        "it": "angolo al vertice C",
+        "no": "vinkel ved C",
+        "ka": "კუთხე C წვეროში",
+        "zh": "C 点处的角",
+        "ja": "点 C の角",
+        "sa": "C स्थाने कोणः"
+      },
+      "candidate_concepts": ["ENT_ANGLE", "EXTRINSIC_POLAR_ANGLE"],
+      "expected_resolution": "CLARIFY_REQUIRED",
+      "status": "EXPECTED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "GEO-AMBIG-SIDE-001",
+      "candidate_utterances": {
+        "en": "side AB",
+        "ru": "сторона AB",
+        "uk": "сторона AB",
+        "he": "הצלע AB",
+        "fr": "côté AB",
+        "de": "Seite AB",
+        "it": "lato AB",
+        "no": "side AB",
+        "ka": "AB გვერდი",
+        "zh": "AB 边",
+        "ja": "辺 AB",
+        "sa": "AB भुजा"
+      },
+      "candidate_concepts": ["ENT_SIDE", "ENT_SEGMENT"],
+      "expected_resolution": "CLARIFY_REQUIRED",
+      "status": "EXPECTED_NOT_EXECUTED",
+      "reason": "A segment is a side only relative to a polygon context; do not infer a circle chord without the required incidence context."
+    }
+  ]
+}

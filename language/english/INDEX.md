@@ -39,3 +39,5 @@ Metadata:
 - Maintainer: a50kv109
 - Repo: a50kv109/AAM-Language-Kernels
 - Created: 2026-07-04
+
+Shared geometry mapping: [Engineering Axis link](engineering/geometry_canon.md) — proposed; language terms are NOT_VERIFIED.

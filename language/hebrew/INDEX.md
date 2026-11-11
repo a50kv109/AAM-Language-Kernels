@@ -17,6 +17,7 @@
 - [semantics/](semantics/) and [context/](context/) — semantic and ambiguity policies.
 - [historical/](historical/) — distinct historical research areas; not a unified norm.
 - [engineering/](engineering/) and [sacred/](sacred/) — AAM engineering proposals and cultural concepts.
+- [engineering/geometry_canon.md](engineering/geometry_canon.md) — proposed link to the shared geometry canon; terminology is NOT_VERIFIED.
 - [core/](core/) — standard-library Unicode/script utilities and the optional [HebrewNLPAdapter](core/hebrew_nlp_adapter.py).
 - [examples/](examples/) and [tests/](tests/) — runnable example and behavioral unit tests.
 - [extensions/](extensions/) — author-reported AAM extensions kept separate from linguistic evidence.

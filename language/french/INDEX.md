@@ -15,6 +15,8 @@ This index serves as the single entry point and navigation hub for the French la
 
 **Key Enhancement:** Now integrated with AXIS-10 (Translation & Interpretation Axis) for engineering semantic verification.
 
+Shared geometry mapping: [Engineering Axis link](engineering/geometry_canon.md) — proposal only; French terminology is NOT_VERIFIED.
+
 ---
 
 ## 🗂️ Repository File Map

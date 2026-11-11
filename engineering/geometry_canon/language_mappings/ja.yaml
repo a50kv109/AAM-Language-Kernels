@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0.0",
+  "language_id": "ja",
+  "language_name": "Japanese",
+  "mapping_status": "PROPOSED",
+  "entries": [
+    {"canonical_id": "ENT_POINT", "term": "点", "term_source": "assistant_draft_unverified", "transliteration": null, "grammatical_forms": [], "context_variants": [], "translation_validation_status": "NOT_VERIFIED"},
+    {"canonical_id": "ENT_LINE", "term": "直線", "term_source": "assistant_draft_unverified", "transliteration": null, "grammatical_forms": [], "context_variants": [], "translation_validation_status": "NOT_VERIFIED"},
+    {"canonical_id": "ENT_SEGMENT", "term": "線分", "term_source": "assistant_draft_unverified", "transliteration": null, "grammatical_forms": [], "context_variants": [], "translation_validation_status": "NOT_VERIFIED"},
+    {"canonical_id": "ENT_RAY", "term": "半直線", "term_source": "assistant_draft_unverified", "transliteration": null, "grammatical_forms": [], "context_variants": [], "translation_validation_status": "NOT_VERIFIED"},
+    {"canonical_id": "ENT_CIRCLE_BOUNDARY", "term": "円周", "term_source": "assistant_draft_unverified", "transliteration": null, "grammatical_forms": [], "context_variants": [], "translation_validation_status": "NOT_VERIFIED"},
+    {"canonical_id": "ENT_DISK", "term": "円板", "term_source": "assistant_draft_unverified", "transliteration": null, "grammatical_forms": [], "context_variants": [], "translation_validation_status": "NOT_VERIFIED"},
+    {"canonical_id": "ENT_TRIANGLE", "term": "三角形", "term_source": "assistant_draft_unverified", "transliteration": null, "grammatical_forms": [], "context_variants": [], "translation_validation_status": "NOT_VERIFIED"},
+    {"canonical_id": "ENT_SQUARE", "term": "正方形", "term_source": "assistant_draft_unverified", "transliteration": null, "grammatical_forms": [], "context_variants": [], "translation_validation_status": "NOT_VERIFIED"},
+    {"canonical_id": "ENT_RECTANGLE", "term": "長方形", "term_source": "assistant_draft_unverified", "transliteration": null, "grammatical_forms": [], "context_variants": [], "translation_validation_status": "NOT_VERIFIED"},
+    {"canonical_id": "ENT_POLYGON", "term": "多角形", "term_source": "assistant_draft_unverified", "transliteration": null, "grammatical_forms": [], "context_variants": [], "translation_validation_status": "NOT_VERIFIED"},
+    {"canonical_id": "ENT_ANGLE", "term": "角", "term_source": "assistant_draft_unverified", "transliteration": null, "grammatical_forms": [], "context_variants": [], "translation_validation_status": "NOT_VERIFIED"},
+    {"canonical_id": "ENT_VERTEX", "term": "頂点", "term_source": "assistant_draft_unverified", "transliteration": null, "grammatical_forms": [], "context_variants": [], "translation_validation_status": "NOT_VERIFIED"},
+    {"canonical_id": "ENT_SIDE", "term": "辺", "term_source": "assistant_draft_unverified", "transliteration": null, "grammatical_forms": [], "context_variants": [], "translation_validation_status": "NOT_VERIFIED"},
+    {"canonical_id": "REL_PARALLEL", "term": "平行", "term_source": "assistant_draft_unverified", "transliteration": null, "grammatical_forms": [], "context_variants": [], "translation_validation_status": "NOT_VERIFIED"},
+    {"canonical_id": "REL_PERPENDICULAR", "term": "垂直", "term_source": "assistant_draft_unverified", "transliteration": null, "grammatical_forms": [], "context_variants": [], "translation_validation_status": "NOT_VERIFIED"},
+    {"canonical_id": "REL_INTERSECTION", "term": "交点", "term_source": "assistant_draft_unverified", "transliteration": null, "grammatical_forms": [], "context_variants": [], "translation_validation_status": "NOT_VERIFIED"},
+    {"canonical_id": "ENT_RADIUS", "term": "半径", "term_source": "assistant_draft_unverified", "transliteration": null, "grammatical_forms": [], "context_variants": [], "translation_validation_status": "NOT_VERIFIED"},
+    {"canonical_id": "ENT_DIAMETER", "term": "直径", "term_source": "assistant_draft_unverified", "transliteration": null, "grammatical_forms": [], "context_variants": [], "translation_validation_status": "NOT_VERIFIED"}
+  ]
+}

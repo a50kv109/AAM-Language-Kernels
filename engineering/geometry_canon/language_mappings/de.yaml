@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0.0",
+  "language_id": "de",
+  "language_name": "German",
+  "mapping_status": "PROPOSED",
+  "entries": [
+    {"canonical_id": "ENT_POINT", "term": "Punkt", "term_source": "assistant_draft_unverified", "transliteration": null, "grammatical_forms": [], "context_variants": [], "translation_validation_status": "NOT_VERIFIED"},
+    {"canonical_id": "ENT_LINE", "term": "Gerade", "term_source": "assistant_draft_unverified", "transliteration": null, "grammatical_forms": [], "context_variants": [], "translation_validation_status": "NOT_VERIFIED"},
+    {"canonical_id": "ENT_SEGMENT", "term": "Strecke", "term_source": "assistant_draft_unverified", "transliteration": null, "grammatical_forms": [], "context_variants": [], "translation_validation_status": "NOT_VERIFIED"},
+    {"canonical_id": "ENT_RAY", "term": "Strahl", "term_source": "assistant_draft_unverified", "transliteration": null, "grammatical_forms": [], "context_variants": [], "translation_validation_status": "NOT_VERIFIED"},
+    {"canonical_id": "ENT_CIRCLE_BOUNDARY", "term": "Kreislinie", "term_source": "assistant_draft_unverified", "transliteration": null, "grammatical_forms": [], "context_variants": [], "translation_validation_status": "NOT_VERIFIED"},
+    {"canonical_id": "ENT_DISK", "term": "Kreisscheibe", "term_source": "assistant_draft_unverified", "transliteration": null, "grammatical_forms": [], "context_variants": [], "translation_validation_status": "NOT_VERIFIED"},
+    {"canonical_id": "ENT_TRIANGLE", "term": "Dreieck", "term_source": "assistant_draft_unverified", "transliteration": null, "grammatical_forms": [], "context_variants": [], "translation_validation_status": "NOT_VERIFIED"},
+    {"canonical_id": "ENT_SQUARE", "term": "Quadrat", "term_source": "assistant_draft_unverified", "transliteration": null, "grammatical_forms": [], "context_variants": [], "translation_validation_status": "NOT_VERIFIED"},
+    {"canonical_id": "ENT_RECTANGLE", "term": "Rechteck", "term_source": "assistant_draft_unverified", "transliteration": null, "grammatical_forms": [], "context_variants": [], "translation_validation_status": "NOT_VERIFIED"},
+    {"canonical_id": "ENT_POLYGON", "term": "Polygon", "term_source": "assistant_draft_unverified", "transliteration": null, "grammatical_forms": [], "context_variants": [], "translation_validation_status": "NOT_VERIFIED"},
+    {"canonical_id": "ENT_ANGLE", "term": "Winkel", "term_source": "assistant_draft_unverified", "transliteration": null, "grammatical_forms": [], "context_variants": [], "translation_validation_status": "NOT_VERIFIED"},
+    {"canonical_id": "ENT_VERTEX", "term": "Eckpunkt", "term_source": "assistant_draft_unverified", "transliteration": null, "grammatical_forms": [], "context_variants": [], "translation_validation_status": "NOT_VERIFIED"},
+    {"canonical_id": "ENT_SIDE", "term": "Seite", "term_source": "assistant_draft_unverified", "transliteration": null, "grammatical_forms": [], "context_variants": [], "translation_validation_status": "NOT_VERIFIED"},
+    {"canonical_id": "REL_PARALLEL", "term": "Parallelität", "term_source": "assistant_draft_unverified", "transliteration": null, "grammatical_forms": [], "context_variants": [], "translation_validation_status": "NOT_VERIFIED"},
+    {"canonical_id": "REL_PERPENDICULAR", "term": "Orthogonalität", "term_source": "assistant_draft_unverified", "transliteration": null, "grammatical_forms": [], "context_variants": [], "translation_validation_status": "NOT_VERIFIED"},
+    {"canonical_id": "REL_INTERSECTION", "term": "Schnitt", "term_source": "assistant_draft_unverified", "transliteration": null, "grammatical_forms": [], "context_variants": [], "translation_validation_status": "NOT_VERIFIED"},
+    {"canonical_id": "ENT_RADIUS", "term": "Radius", "term_source": "assistant_draft_unverified", "transliteration": null, "grammatical_forms": [], "context_variants": [], "translation_validation_status": "NOT_VERIFIED"},
+    {"canonical_id": "ENT_DIAMETER", "term": "Durchmesser", "term_source": "assistant_draft_unverified", "transliteration": null, "grammatical_forms": [], "context_variants": [], "translation_validation_status": "NOT_VERIFIED"}
+  ]
+}

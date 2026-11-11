@@ -39,3 +39,5 @@ Metadata:
 - Maintainer: a50kv109
 - Repo: a50kv109/AAM-Language-Kernels
 - Created: 2026-07-04
+
+Спільне геометричне зіставлення: [посилання Engineering Axis](engineering/geometry_canon.md) — пропозиція; українські терміни NOT_VERIFIED.

@@ -14,6 +14,7 @@
 6. **კონტექსტური ღერძი:** ინდუსტრიული რეგისტრები.
 7. **ფონეტიკური ღერძი:** კონსონანტური კლასტერები.
 8. **ტექნიკური ღერძი (Technical):** საინჟინრო პროექტირება.
+   - Shared geometry mapping: [Engineering Axis link](engineering/geometry_canon.md); Georgian terminology is NOT_VERIFIED.
 9. **სამედიცინო ღერძი (Medical):** კლინიკური დიაგნოსტიკა.
 10. **სპეციალიზებული ღერძი (Specialized):** ავტომატიზაცია.
 

@@ -17,6 +17,7 @@ This kernel records Italian language structure and domain terminology for semant
 - [Axis 8: Technical terminology](engineering/technical_terms.md)
 - [Axis 9: Medical terminology](engineering/medical_terms.md)
 - [Axis 10: Specialized terminology](engineering/specialized_terms.md)
+- [Shared geometry mapping](engineering/geometry_canon.md) — proposed; Italian terminology is NOT_VERIFIED.
 - [Music-language layer](music/INDEX.md)
 - [Validation script](validate_italian_kernel.py)
 

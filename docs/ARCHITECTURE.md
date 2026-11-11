@@ -20,6 +20,7 @@ Language kernel directory
   ├─ passport.md             # metadata + AXIS-10 declaration
   ├─ ground_truth_matrix.md  # domain mapping / SOL references
   ├─ engineering/*.md       # terms by engineering axis
+  ├─ engineering/geometry_canon.md # proposed shared geometry mapping link
   ├─ pattern_registry.md     # controlled pattern records (where applicable)
   ├─ validate_*.py          # repository-level validation scripts
   └─ additional domain modules (e.g. italian/music/)
@@ -27,9 +28,9 @@ Language kernel directory
 
 ---
 
-## 📦 Repository Structure (actual state on main)
+## 📦 Repository Structure (main baseline + geometry-canon proposal)
 
-The repository does not currently contain a uniform `logic/` and `data/` sub-structure under every kernel. The actual repository layout is closer to the following:
+The repository does not contain a uniform `logic/` and `data/` sub-structure under every kernel. The language tree below reflects the inspected main baseline; the top-level `engineering/geometry_canon/` directory is the proposal on this branch.
 
 ```
 AAM-Language-Kernels/
@@ -37,6 +38,13 @@ AAM-Language-Kernels/
 │   ├── ARCHITECTURE.md
 │   ├── AXIS10_GUIDE.md
 │   └── GLOSSARY.md
+│
+├── engineering/
+│   └── geometry_canon/
+│       ├── GEOMETRY_CANON.md
+│       ├── geometry_concepts.yaml
+│       ├── language_mappings/
+│       └── benchmark/
 │
 ├── language/
 │   ├── master/
@@ -47,7 +55,9 @@ AAM-Language-Kernels/
 │   ├── english/
 │   │   ├── INDEX.md
 │   │   ├── passport.md
-│   │   └── ground_truth_matrix.md
+│   │   ├── ground_truth_matrix.md
+│   │   └── engineering/
+│   │       └── geometry_canon.md
 │   │
 │   ├── french/
 │   │   ├── INDEX.md
@@ -174,6 +184,10 @@ The following directories are present in the repository on `main` and are refere
 | Sanskrit | `language/sanskrit` | `INDEX.md`, `passport.md`, `ground_truth_matrix.md` | `AXIS-10 Architecture: READY`; role as semantic gateway |
 
 This table is intentionally factual and conservative: it records the repository's own declared state rather than baking in a single normalized project-wide readiness claim.
+
+### Shared geometry canon proposal
+
+The repository-level [`engineering/geometry_canon/`](../engineering/geometry_canon/) directory defines a proposed, language-independent planar-geometry vocabulary and candidate mappings for the 12 language kernels listed above. Each kernel's Engineering Axis links to its mapping. The terminology is **NOT_VERIFIED**, the benchmark contains candidate fixtures rather than observed parser outputs, and no Geometry Skill runtime execution is claimed. This shared data layer does not change any kernel's OST axes or AAM extensions.
 
 ---
 

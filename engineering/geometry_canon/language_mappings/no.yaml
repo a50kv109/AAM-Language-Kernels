@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0.0",
+  "language_id": "no",
+  "language_name": "Norwegian",
+  "mapping_status": "PROPOSED",
+  "entries": [
+    {"canonical_id": "ENT_POINT", "term": "punkt", "term_source": "assistant_draft_unverified", "transliteration": null, "grammatical_forms": [], "context_variants": [], "translation_validation_status": "NOT_VERIFIED"},
+    {"canonical_id": "ENT_LINE", "term": "linje", "term_source": "assistant_draft_unverified", "transliteration": null, "grammatical_forms": [], "context_variants": [], "translation_validation_status": "NOT_VERIFIED"},
+    {"canonical_id": "ENT_SEGMENT", "term": "linjestykke", "term_source": "assistant_draft_unverified", "transliteration": null, "grammatical_forms": [], "context_variants": [], "translation_validation_status": "NOT_VERIFIED"},
+    {"canonical_id": "ENT_RAY", "term": "stråle", "term_source": "assistant_draft_unverified", "transliteration": null, "grammatical_forms": [], "context_variants": [], "translation_validation_status": "NOT_VERIFIED"},
+    {"canonical_id": "ENT_CIRCLE_BOUNDARY", "term": "sirkelrand", "term_source": "assistant_draft_unverified", "transliteration": null, "grammatical_forms": [], "context_variants": [], "translation_validation_status": "NOT_VERIFIED"},
+    {"canonical_id": "ENT_DISK", "term": "sirkelområde", "term_source": "assistant_draft_unverified", "transliteration": null, "grammatical_forms": [], "context_variants": [], "translation_validation_status": "NOT_VERIFIED"},
+    {"canonical_id": "ENT_TRIANGLE", "term": "trekant", "term_source": "assistant_draft_unverified", "transliteration": null, "grammatical_forms": [], "context_variants": [], "translation_validation_status": "NOT_VERIFIED"},
+    {"canonical_id": "ENT_SQUARE", "term": "kvadrat", "term_source": "assistant_draft_unverified", "transliteration": null, "grammatical_forms": [], "context_variants": [], "translation_validation_status": "NOT_VERIFIED"},
+    {"canonical_id": "ENT_RECTANGLE", "term": "rektangel", "term_source": "assistant_draft_unverified", "transliteration": null, "grammatical_forms": [], "context_variants": [], "translation_validation_status": "NOT_VERIFIED"},
+    {"canonical_id": "ENT_POLYGON", "term": "polygon", "term_source": "assistant_draft_unverified", "transliteration": null, "grammatical_forms": [], "context_variants": [], "translation_validation_status": "NOT_VERIFIED"},
+    {"canonical_id": "ENT_ANGLE", "term": "vinkel", "term_source": "assistant_draft_unverified", "transliteration": null, "grammatical_forms": [], "context_variants": [], "translation_validation_status": "NOT_VERIFIED"},
+    {"canonical_id": "ENT_VERTEX", "term": "toppunkt", "term_source": "assistant_draft_unverified", "transliteration": null, "grammatical_forms": [], "context_variants": [], "translation_validation_status": "NOT_VERIFIED"},
+    {"canonical_id": "ENT_SIDE", "term": "side", "term_source": "assistant_draft_unverified", "transliteration": null, "grammatical_forms": [], "context_variants": [], "translation_validation_status": "NOT_VERIFIED"},
+    {"canonical_id": "REL_PARALLEL", "term": "parallellitet", "term_source": "assistant_draft_unverified", "transliteration": null, "grammatical_forms": [], "context_variants": [], "translation_validation_status": "NOT_VERIFIED"},
+    {"canonical_id": "REL_PERPENDICULAR", "term": "ortogonalitet", "term_source": "assistant_draft_unverified", "transliteration": null, "grammatical_forms": [], "context_variants": [], "translation_validation_status": "NOT_VERIFIED"},
+    {"canonical_id": "REL_INTERSECTION", "term": "skjæring", "term_source": "assistant_draft_unverified", "transliteration": null, "grammatical_forms": [], "context_variants": [], "translation_validation_status": "NOT_VERIFIED"},
+    {"canonical_id": "ENT_RADIUS", "term": "radius", "term_source": "assistant_draft_unverified", "transliteration": null, "grammatical_forms": [], "context_variants": [], "translation_validation_status": "NOT_VERIFIED"},
+    {"canonical_id": "ENT_DIAMETER", "term": "diameter", "term_source": "assistant_draft_unverified", "transliteration": null, "grammatical_forms": [], "context_variants": [], "translation_validation_status": "NOT_VERIFIED"}
+  ]
+}
