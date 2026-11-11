@@ -19,7 +19,7 @@ cp -r language/master/kernel_template/ language/[LANGUAGE_CODE]/docs/
 
 ### Engineering Semantic Compiler (ESC) Status
 - **Protocol:** AAM-V2_ARTSYBASHEV
-- **Master Config:** [MASTER_AXIS10_CONFIG.md](../../MASTER_AXIS10_CONFIG.md)
+- **Master Config:** [MASTER_AXIS10_CONFIG.md](../MASTER_AXIS10_CONFIG.md)
 - **ESC Enabled:** ✅ YES
 - **Validation Level:** FULL
 
@@ -118,4 +118,4 @@ Thresholds:
 
 ---
 
-**Questions?** Refer to MASTER_AXIS10_CONFIG.md for complete spec.
+**Questions?** Refer to [MASTER_AXIS10_CONFIG.md](../MASTER_AXIS10_CONFIG.md) for complete spec.
