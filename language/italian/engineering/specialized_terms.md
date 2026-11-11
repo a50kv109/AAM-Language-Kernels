@@ -1,14 +1,14 @@
 # Axis 10: Specialized (Automazione e Fachtechnik Industriale)
 
-## 📋 OVERVIEW
-L'asse specializzato copre l'automazione avanzata, il controllo qualità e le tecnologie di processo nell'industria 4.0.
+## OVERVIEW
+L'asse specializzato copre l'automazione avanzata, il controllo qualità e le tecnologie di processo nell'industria.
 
-## 🛠️ CORE COMPONENTS
-- **Automazione Industriale:** Sistemi di controllo PLC, SCADA e robotica.
-- **Controllo Qualità:** Metodologie per la verifica della conformità AXIS-10.
-- **Meccatronica:** Integrazione di elettronica, meccanica и informatica.
+## CORE COMPONENTS
+- **Automazione Industriale:** sistemi di controllo PLC, SCADA e robotica.
+- **Controllo Qualità:** metodologie per la verifica della conformità.
+- **Meccatronica:** integrazione di elettronica, meccanica e informatica.
 
-## 🔑 KEY TERMS
+## KEY TERMS
 - *Automazione* (Automation)
 - *Qualità* (Quality)
 - *Servosistema* (Servosystem)

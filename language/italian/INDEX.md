@@ -1,17 +1,34 @@
-# Italian Language Kernel (IT:13) - AXIS-10 GOLDEN SYNC
+# Italian Language Kernel (IT:13)
 
-## 🇮🇹 BENVENUTI NEL NUCLEO ITALIANO
-Questo è il punto di ingresso per il nucleo linguistico italiano (IT:13), pienamente integrato secondo lo standard ingegneristico AXIS-10.
+## 🇮🇹 Italian semantic gateway
 
-### 🧩 STRUTTURA DEL CORE
-- **[Passaporto Tecnico](passport.md):** Specifiche AXIS-10 e conformità AAM-V2.
-- **[Matrice di Verità](ground_truth_matrix.md):** Mappatura SOL-tags tra IT e EN.
-- **Ingegneria di Precisione:**
-    - [Axis 8: Ingegneria Tecnica](engineering/axis8_technical.md)
-    - [Axis 9: Medicina e Biomedica](engineering/axis9_medical.md)
-    - [Axis 10: Specializzazione Industriale](engineering/axis10_specialized.md)
+**Core ID:** IT:13  
+**Locale:** it-IT  
+**Architecture reference:** AAM-V2 / AXIS-10  
+**Status:** INITIALIZING — documented baseline, not a validated full language engine.
 
-### 🚀 STATO DI INTEGRAZIONE
-- **Status:** INITIALIZING
-- **Invariance Mode:** ENABLED (Golden standard EN:10)
-- **AXIS-10 Ready:** ✅ YES
+This kernel records Italian language structure and domain terminology for semantic interpretation. It does not execute engineering calculations or replace human editorial judgment.
+
+## Kernel structure
+
+- [Technical passport](passport.md)
+- [Ground-truth matrix](ground_truth_matrix.md)
+- [Italian pattern registry](pattern_registry.md)
+- [Axis 8: Technical terminology](engineering/technical_terms.md)
+- [Axis 9: Medical terminology](engineering/medical_terms.md)
+- [Axis 10: Specialized terminology](engineering/specialized_terms.md)
+- [Music-language layer](music/INDEX.md)
+- [Validation script](validate_italian_kernel.py)
+
+## Current scope
+
+The music layer captures Italian lexical and grammatical patterns commonly found in Western classical scores, especially tempo, character, dynamics, articulation and expression. Italian is historically central to much traditional musical vocabulary; musical notation itself is international and score directions also come from other languages.
+
+## Validation status
+
+- Linguistic coverage: INITIAL
+- Music-pattern corpus: INITIAL
+- Human-reviewed score examples: NOT YET ESTABLISHED
+- Integrity Score / TDI: NOT MEASURED
+
+Architectural targets must not be interpreted as measured performance.
