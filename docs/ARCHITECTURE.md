@@ -153,6 +153,7 @@ The following directories are present in the repository on `main` and are refere
 | English | `language/english` | `INDEX.md`, `passport.md`, `ground_truth_matrix.md` | `Current IS: 0.00` / `⚠️ IN_PROGRESS` |
 | French | `language/french` | `INDEX.md`, `passport.md`, `ground_truth_matrix.md`, `engineering/` | `Current IS: 0.00` / `⚠️ INITIALIZING_AXIS10` |
 | Chinese | `language/chinese` | `INDEX.md`, `passport.md`, `pattern_registry.md`, `validate_patterns.py` | `⚠️ INITIALIZING_AXIS10`; canonical pattern set separated from research-only records |
+| Japanese | `language/japanese` | `INDEX.md`, `passport.md`, `pattern_registry.csv`, `ground_truth_matrix.md`, `validation/` | `PROPOSED / INITIAL BASELINE`; architecture and pattern set are documented but not full corpus-validated |
 | German | `language/german` | `INDEX.md`, `passport.md`, `ground_truth_matrix.md`, `engineering/` | `Current IS: 0.00` / `⚠️ INITIALIZING_AXIS10` |
 | Russian | `language/russian` | `INDEX.md`, `passport.md`, `ground_truth_matrix.md`, `engineering/` | `Current IS: 0.00` / `⚠️ INITIALIZING_AXIS10` |
 | Ukrainian | `language/ukrainian` | `INDEX.md`, `passport.md`, `ground_truth_matrix.md`, `engineering/` | `Current IS: 0.00` / `⚠️ INITIALIZING_AXIS10` |
@@ -218,6 +219,7 @@ The builder is therefore an architectural support project, not proof that every 
 | English kernel | ⚠️ IN_PROGRESS | `language/english/passport.md` |
 | French kernel | ⚠️ INITIALIZING_AXIS10 | `language/french/passport.md` |
 | Chinese kernel | ⚠️ INITIALIZING_AXIS10 | `language/chinese/passport.md` and `pattern_registry.md` |
+| Japanese kernel | PROPOSED / INITIAL BASELINE | `language/japanese/passport.md` and `language/japanese/pattern_registry.csv` |
 | German kernel | ⚠️ INITIALIZING_AXIS10 | `language/german/passport.md` |
 | Russian kernel | ⚠️ INITIALIZING_AXIS10 | `language/russian/passport.md` |
 | Ukrainian kernel | ⚠️ INITIALIZING_AXIS10 | `language/ukrainian/passport.md` |

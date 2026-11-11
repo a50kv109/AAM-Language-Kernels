@@ -10,6 +10,7 @@ AAM-Language-Kernels: Модульная архитектура языковог
 - 🇷🇺 Русский (rus)
 - 🇺🇦 Украинский (ukr)
 - 🇨🇳 Китайский (zho)
+- 🇯🇵 Японский (jpn) — L2_JA / PROPOSED INITIAL BASELINE
 - 🇫🇷 Французский (fra)
 - 🇩🇪 Немецкий (deu)
 - 🇮🇹 Итальянский (ita)

@@ -1,0 +1,7 @@
+"id","category","japanese_pattern","reading","translation","grammatical_function","semantic_function","example_ja","example_translation","source","source_location","epistemic_status","confidence","limitations"
+"JA_GRAM_001","Grammar","X は Y です","X wa Y desu","X is Y","Identification","Topic declaration","これはペンです。","This is a pen.","GENKI","Grammar 1.1","VERIFIED","88","Elementary-classroom scope only"
+"JA_GRAM_002","Grammar","〜てください","~te kudasai","Please do X","Request/Instruction","Command execution","見てください。","Please look.","GENKI","Grammar 6.1","VERIFIED","86","Lacks passive/causative nuance"
+"JA_GRAM_003","Grammar","X のほうが Y より","X no hou ga Y yori","X is more than Y","Comparison","COMPARE primitive","AのほうがBより大きい。","A is bigger than B.","GENKI","Table 10.1","VERIFIED","84","Limited to elementary comparison patterns"
+"JA_SEM_001","Semantics","観察 vs 観測","Kansatsu vs Kansoku","Observation vs Measurement","Noun","Distinction of OBSERVATION type","データを観測する。","Measure the data.","Prompt","L2_JA architecture","SOURCE_SUPPORTED","90","Requires contextual validation"
+"JA_ENG_001","Engineering","物理的制約","Butsuriteki seiyaku","Physical constraint","Noun phrase","CONSTRAINT primitive","物理的制約がある。","There is a physical constraint.","Architecture","L3","PROPOSED","85","Requires JIS corpus check"
+"JA_CONTEXT_001","Context","て-form + もらう","~te morau","Receive action","Action direction","FLOW of action","直してもらう。","Have it fixed by someone.","Architecture","L4","INFERRED","80","Hidden subject"
