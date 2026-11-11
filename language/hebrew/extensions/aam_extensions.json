@@ -1,0 +1,90 @@
+{
+  "extension_record_status": "REPORTED_NOT_VERIFIED",
+  "provenance": "Transcribed from gemini-code-1794400372342.json; not independently validated.",
+  "identifier": "AAM-V1_ARTSYBASHEV_UA_KHARKIV_AIANALYSIS",
+  "ost": {
+    "status": "NOT_VERIFIED",
+    "identifiers_reported_by_task": [
+      "OST-1",
+      "OST-2",
+      "OST-3",
+      "OST-4",
+      "OST-5",
+      "OST-6",
+      "OST-7",
+      "OST-8",
+      "OST-9"
+    ],
+    "definitions_in_supplied_transfer": null
+  },
+  "evrid": {
+    "status": "REPORTED_PROPOSED",
+    "function": 0.95,
+    "tension": 0.18,
+    "density": 0.75,
+    "gravity": 0.97
+  },
+  "nadi": {
+    "status": "REPORTED_PROPOSED",
+    "ida": "triliteral_roots_binyanim",
+    "pingala": "verb_forms_melody",
+    "sushumna": "sacred_codes_Torah_Shekhinah"
+  },
+  "zic_registry": {
+    "status": "REPORTED_PROPOSED",
+    "linguistic_validation": "NOT_VERIFIED",
+    "concepts": {
+      "תורה": {
+        "meaning_reported": "Закон/Вчение",
+        "effect_tdi": -0.09,
+        "guna": "sattva",
+        "nadi": "sushumna"
+      },
+      "שכינה": {
+        "meaning_reported": "Присутствие Бога",
+        "effect_tdi": -0.08,
+        "guna": "sattva",
+        "nadi": "sushumna"
+      },
+      "צדק": {
+        "meaning_reported": "справедливость",
+        "effect_tdi": -0.06,
+        "guna": "sattva",
+        "nadi": "pingala"
+      },
+      "אמת": {
+        "meaning_reported": "истина",
+        "effect_tdi": -0.05,
+        "guna": "sattva",
+        "nadi": "pingala"
+      },
+      "שלום": {
+        "meaning_reported": "мир/целостность",
+        "effect_tdi": -0.07,
+        "guna": "sattva",
+        "nadi": "sushumna"
+      },
+      "אור": {
+        "meaning_reported": "свет",
+        "effect_tdi": -0.04,
+        "guna": "sattva",
+        "nadi": "pingala"
+      }
+    }
+  },
+  "module_64": {
+    "status": "REPORTED_PROPOSED",
+    "metrics": {
+      "S_stability": 0.94,
+      "TDI_avg": 0.19,
+      "sobornost": 0.91,
+      "sacredness": 0.97
+    },
+    "measurement_basis": "NOT_PROVIDED"
+  },
+  "dharma_manifest": {
+    "status": "REPORTED_PROPOSED",
+    "manifest_id": "DHARMA_HEBREW_2026",
+    "methodology": "AAM-V2.1 (UKGS)"
+  }
+}
