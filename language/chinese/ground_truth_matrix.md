@@ -15,6 +15,32 @@
 ---
 *注：所有引理均与英文基准 (Golden Standard) 同步。*
 
+## 📚 CANONICAL HISTORICAL PATTERN REGISTRY
+
+| Pattern ID | Canonical Name | Source | Evidence Level | Source Availability | Status |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `ZH_PAT_001` | HESUAN_FRACTION_ADDITION | 《九章算术》 | VERIFIED_PRIMARY_SOURCE | original_source_text_available | ✅ CANONICAL |
+| `ZH_PAT_002A` | SUNZI_POSITIONAL_ORIENTATION | 《孙子算经》 | VERIFIED_PRIMARY_SOURCE | original_source_text_available | ✅ CANONICAL |
+| `ZH_PAT_002B` | XIAHOU_BIQUINARY_CONSTRUCTION | 《夏侯阳算经》 | VERIFIED_PRIMARY_SOURCE | original_source_text_available | ✅ CANONICAL |
+| `ZH_PAT_003` | HAIDAO_GEOMETRIC_SURVEYING | 《海岛算经》 | VERIFIED_WITH_COMMENTARY | original_source_text_unavailable | ⚠️ CANONICAL_WITH_WARNING |
+| `ZH_PAT_005` | SUNZI_DIVISION_SHIFT | 《孙子算经》 | VERIFIED_PRIMARY_SOURCE | original_source_text_available | ✅ CANONICAL |
+
+### Research-only records
+
+| Pattern ID | Status | Source | Notes |
+| :--- | :--- | :--- | :--- |
+| `ZH_PAT_004` | ⚠️ RESEARCH_ONLY | 《数术记遗》 | Edition-specific witness data remains unresolved; not promoted to canonical status. |
+
+### Source-state note
+
+- `original_source_text_available`: full source quotation preserved in the record.
+- `original_source_text_unavailable`: source quotation is missing; the record remains explicit about the gap.
+- `quotation_partially_available`: only a partial quotation is recorded.
+- `quotation_awaiting_verification`: the quotation status is not yet confirmed.
+
+### Registry reference
+The detailed records are held in [pattern_registry.md](./pattern_registry.md).
+
 ## 🛡 CONSENSUS_PROTOCOL
 ```yaml
 CONSENSUS_PROTOCOL:
