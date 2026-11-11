@@ -115,11 +115,11 @@ For correct cognitive tracing of the kernel, study the documentation package in 
 
 ## 📚 Related Documentation
 
-- **Master Template:** [Master_Kernel_Template.md](../../../Master_Kernel_Template.md)
-- **AXIS-10 Specification:** [MASTER_AXIS10_CONFIG.md](../../../MASTER_AXIS10_CONFIG.md)
-- **Implementation Guide:** [docs/AXIS10_GUIDE.md](../../../docs/AXIS10_GUIDE.md)
-- **Global Glossary:** [docs/GLOSSARY.md](../../../docs/GLOSSARY.md)
-- **Architecture Overview:** [docs/ARCHITECTURE.md](../../../docs/ARCHITECTURE.md)
+- **Master Template:** [AXIS10_FULL_TEMPLATE.md](../master/AXIS10_FULL_TEMPLATE.md)
+- **AXIS-10 Specification:** [MASTER_AXIS10_CONFIG.md](../../MASTER_AXIS10_CONFIG.md)
+- **Implementation Guide:** [docs/AXIS10_GUIDE.md](../../docs/AXIS10_GUIDE.md)
+- **Global Glossary:** [docs/GLOSSARY.md](../../docs/GLOSSARY.md)
+- **Architecture Overview:** [docs/ARCHITECTURE.md](../../docs/ARCHITECTURE.md)
 
 ---
 

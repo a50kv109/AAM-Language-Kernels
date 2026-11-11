@@ -182,8 +182,8 @@ RU: Тепловое ограничение (ГОСТ 1.5)
 ### Reference Pattern
 ```markdown
 ## AXIS-10 CONFIGURATION
-See: [MASTER_AXIS10_CONFIG.md](../MASTER_AXIS10_CONFIG.md)
-Domain CEV Registry: [Master Glossary](../MASTER_GLOSSARY.md)
+See: [MASTER_AXIS10_CONFIG.md](./MASTER_AXIS10_CONFIG.md)
+Domain CEV Registry: [Master Glossary](./docs/GLOSSARY.md)
 TDI Monitoring: Active (threshold: 0.35)
 ```
 
