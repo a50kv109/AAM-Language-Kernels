@@ -18,12 +18,36 @@ class GeometryCanonTests(unittest.TestCase):
         data = load_json_yaml(CANON_DIR / "geometry_concepts.yaml")
         concepts = {item["canonical_id"]: item for item in data["concepts"]}
 
+        self.assertEqual(data["canonical_definition_status"], "BASELINE_FROZEN")
         self.assertEqual(concepts["ENT_CIRCLE_BOUNDARY"]["dimensionality"], "1D")
         self.assertEqual(concepts["ENT_DISK"]["dimensionality"], "2D")
         self.assertIn("unbounded", concepts["ENT_LINE"]["properties"])
         self.assertIn("bounded", concepts["ENT_SEGMENT"]["properties"])
+        self.assertNotEqual(concepts["ENT_LINE"]["canonical_id"], concepts["ENT_RAY"]["canonical_id"])
+        self.assertNotEqual(concepts["ENT_SEGMENT"]["canonical_id"], concepts["ENT_RAY"]["canonical_id"])
         self.assertEqual(concepts["REL_PARALLEL"]["semantic_type"], "RELATION")
         self.assertEqual(concepts["REL_PERPENDICULAR"]["semantic_type"], "RELATION")
+
+    def test_entity_records_do_not_embed_geometry_operations(self) -> None:
+        data = load_json_yaml(CANON_DIR / "geometry_concepts.yaml")
+        operation_fields = {
+            "allowed_operations",
+            "operation_id",
+            "operation_type",
+            "skill_capability_status",
+            "skill_capability_evidence",
+            "capability_source",
+        }
+
+        for concept in data["concepts"]:
+            with self.subTest(canonical_id=concept["canonical_id"]):
+                self.assertTrue(operation_fields.isdisjoint(concept))
+
+        concepts = {item["canonical_id"]: item for item in data["concepts"]}
+        self.assertEqual(
+            concepts["ENT_SQUARE"]["relations"],
+            [{"type": "is_special_case_of", "target": "ENT_RECTANGLE"}],
+        )
 
     def test_fixture_metadata_does_not_claim_observed_language_or_geometry_results(self) -> None:
         benchmark = load_json_yaml(CANON_DIR / "benchmark" / "cross_language_benchmark.yaml")

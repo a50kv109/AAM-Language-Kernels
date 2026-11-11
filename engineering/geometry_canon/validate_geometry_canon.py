@@ -13,10 +13,41 @@ from typing import Any
 
 CANON_DIR = Path(__file__).resolve().parent
 REQUIRED_TYPES = {"OBJECT", "RELATION", "PROPERTY", "RULE"}
+EXPECTED_CANONICAL_IDS = {
+    "ENT_POINT",
+    "ENT_LINE",
+    "ENT_SEGMENT",
+    "ENT_RAY",
+    "ENT_CIRCLE_BOUNDARY",
+    "ENT_DISK",
+    "ENT_TRIANGLE",
+    "ENT_SQUARE",
+    "ENT_RECTANGLE",
+    "ENT_POLYGON",
+    "ENT_ANGLE",
+    "ENT_VERTEX",
+    "ENT_SIDE",
+    "REL_PARALLEL",
+    "REL_PERPENDICULAR",
+    "REL_INTERSECTION",
+    "ENT_RADIUS",
+    "ENT_DIAMETER",
+}
 REQUIRED_DISTINCTIONS = {
     frozenset(("ENT_CIRCLE_BOUNDARY", "ENT_DISK")),
     frozenset(("ENT_LINE", "ENT_SEGMENT")),
+    frozenset(("ENT_LINE", "ENT_RAY")),
+    frozenset(("ENT_SEGMENT", "ENT_RAY")),
+    frozenset(("ENT_SQUARE", "ENT_RECTANGLE")),
     frozenset(("ENT_ANGLE", "EXTRINSIC_POLAR_ANGLE")),
+}
+OPERATION_LAYER_FIELDS = {
+    "allowed_operations",
+    "operation_id",
+    "operation_type",
+    "skill_capability_status",
+    "skill_capability_evidence",
+    "capability_source",
 }
 
 
@@ -57,6 +88,8 @@ def validate_repository(root: Path) -> list[str]:
     concepts = concepts_data.get("concepts")
     if not isinstance(concepts, list) or not concepts:
         return ["geometry_concepts.yaml: concepts must be a non-empty list"]
+    if concepts_data.get("canonical_definition_status") != "BASELINE_FROZEN":
+        errors.append("geometry_concepts.yaml: canonical definitions must be marked BASELINE_FROZEN")
 
     concept_ids: list[str] = []
     concepts_by_id: dict[str, dict[str, Any]] = {}
@@ -78,15 +111,15 @@ def validate_repository(root: Path) -> list[str]:
         concepts_by_id[canonical_id] = concept
         if concept.get("semantic_type") not in REQUIRED_TYPES:
             errors.append(f"{canonical_id}: invalid semantic_type")
-        for field in ("definition", "dimensionality", "relations", "properties", "valid_contexts", "example", "common_errors", "allowed_operations"):
+        for field in ("definition", "dimensionality", "relations", "properties", "valid_contexts", "example", "common_errors"):
             if field not in concept:
                 errors.append(f"{canonical_id}: missing {field}")
-        for field in ("relations", "properties", "valid_contexts", "common_errors", "allowed_operations"):
+        for field in ("relations", "properties", "valid_contexts", "common_errors"):
             if not isinstance(concept.get(field), list):
                 errors.append(f"{canonical_id}: {field} must be a list")
-        if not isinstance(concept.get("allowed_operations"), list):
-            errors.append(f"{canonical_id}: allowed_operations must be a list")
-        for source_field in ("definition_source", "relation_source", "property_source", "capability_source"):
+        if OPERATION_LAYER_FIELDS.intersection(concept):
+            errors.append(f"{canonical_id}: operation-layer fields must not appear in the entity canon")
+        for source_field in ("definition_source", "relation_source", "property_source"):
             source_id = concept.get(source_field)
             if source_id is not None and source_id not in source_registry:
                 errors.append(f"{canonical_id}: {source_field} {source_id} is missing from source_registry")
@@ -99,6 +132,11 @@ def validate_repository(root: Path) -> list[str]:
     concept_set = set(concept_ids)
     if len(concepts) != 18:
         errors.append(f"expected exactly 18 requested concepts; found {len(concepts)}")
+    if concept_set != EXPECTED_CANONICAL_IDS:
+        errors.append(
+            "canonical IDs differ from the frozen v1.0 baseline "
+            f"(expected={sorted(EXPECTED_CANONICAL_IDS)}, found={sorted(concept_set)})"
+        )
 
     semantic_guard = concepts_data.get("semantic_guard", {})
     distinct_pairs = {
@@ -161,8 +199,11 @@ def validate_repository(root: Path) -> list[str]:
                 errors.append(f"{mapping_path}: {canonical_id} needs a non-empty term")
             if entry.get("translation_validation_status") != "NOT_VERIFIED":
                 errors.append(f"{mapping_path}: {canonical_id} must remain NOT_VERIFIED")
-            if not isinstance(entry.get("grammatical_forms"), list) or not isinstance(entry.get("context_variants"), list):
-                errors.append(f"{mapping_path}: {canonical_id} grammatical_forms/context_variants must be lists")
+            if entry.get("linguistic_review_status") != "NOT_RUN":
+                errors.append(f"{mapping_path}: {canonical_id} linguistic review must remain NOT_RUN")
+            for field in ("grammatical_forms", "context_variants", "translation_error_notes", "ambiguity_notes"):
+                if not isinstance(entry.get(field), list):
+                    errors.append(f"{mapping_path}: {canonical_id} {field} must be a list")
         reverse_terms: dict[str, list[str]] = {}
         for entry in entries:
             if isinstance(entry, dict) and isinstance(entry.get("term"), str):
@@ -250,7 +291,7 @@ def main() -> int:
             print(f"ERROR: {error}", file=sys.stderr)
         return 1
     mapping_count = len(list((args.root / "engineering/geometry_canon/language_mappings").glob("*.yaml")))
-    print(f"Geometry canon structure valid: 18 concepts, {mapping_count} language mappings.")
+    print(f"Geometry entity canon structure valid: 18 concepts, {mapping_count} language mappings.")
     print("No linguistic validation or Geometry Skill execution is claimed.")
     return 0
 

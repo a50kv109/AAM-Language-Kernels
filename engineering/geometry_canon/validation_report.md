@@ -1,14 +1,17 @@
 # Geometry Canon Validation Report
 
-**Status:** `STRUCTURAL_FIXTURE_VALIDATION_PASSED`
+**Entity baseline:** `GEOMETRY_ENTITY_CANON_V1.0 — BASELINE FROZEN`
+**Structural validation:** `PASSED`
 **Geometry Skill runtime:** `NOT_RUN`
 **Independent linguistic review:** `NOT_RUN`
 
+The v1.0 freeze covers 18 canonical IDs, entity/relation definitions, semantic types, and their relationships. It does not certify independent mathematical review or linguistic equivalence. Geometry operations, theorem procedures, and engine capability declarations are intentionally outside the entity records.
+
 ## Scope
 
-The repository validator checks canonical-ID integrity, entity/relation typing, allowed-operation metadata, complete mappings for every discovered language kernel, Engineering Axis links, and benchmark fixture shape/parity.
+The repository validator checks canonical-ID integrity, entity/relation typing, semantic distinctions, complete candidate mappings for every discovered language kernel, Engineering Axis links, mapping review-state fields, and benchmark fixture shape/parity. It also rejects operation-layer fields in entity records.
 
-These checks do **not** establish translation accuracy, natural-language parser support, mathematical theorem correctness, or Geometry Skill runtime behavior.
+These checks do **not** establish translation accuracy, grammatical correctness, absence of lexical ambiguity, natural-language parser support, mathematical theorem correctness, or Geometry Skill runtime behavior.
 
 ## Source audit
 
@@ -39,11 +42,20 @@ python3 -m unittest discover -s engineering/geometry_canon -p 'test_*.py'
 Executed in the geometry-canon worktree:
 
 - `python3 engineering/geometry_canon/validate_geometry_canon.py` — passed; 18 concepts and 12 language mappings.
-- `python3 -m unittest discover -s engineering/geometry_canon -p 'test_*.py'` — passed; 4 tests.
+- `python3 -m unittest discover -s engineering/geometry_canon -p 'test_*.py'` — passed; 5 tests.
 - `python3 -m py_compile engineering/geometry_canon/validate_geometry_canon.py engineering/geometry_canon/test_geometry_canon.py` — passed.
 - `git diff --check` — passed.
 
 The fixture benchmark is expected-intent metadata, not an execution log; no `TOOL_VERIFIED` result is present.
+
+All 12 language mappings structurally cover the same 18 canonical IDs. Their candidate terms remain `NOT_VERIFIED`; linguistic review is `NOT_RUN`. Grammatical forms, context variants, translation-error notes, and ambiguity notes are empty or null in the current data. This means those aspects have not been supplied or reviewed, not that variants, errors, or ambiguities do not exist.
+
+The baseline preserves explicit distinctions:
+
+- `ENT_LINE`, `ENT_SEGMENT`, and `ENT_RAY` have different canonical IDs and definitions.
+- `ENT_CIRCLE_BOUNDARY` (1D) and `ENT_DISK` (2D) remain separate.
+- `ENT_SQUARE` is a special case of `ENT_RECTANGLE`, not a synonym for it.
+- `ENT_ANGLE` is a geometric configuration, not an extrinsic polar angle.
 
 ## Remaining validation
 

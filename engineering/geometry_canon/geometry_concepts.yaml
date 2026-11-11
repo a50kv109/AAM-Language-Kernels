@@ -1,7 +1,8 @@
 {
   "schema_version": "1.0.0",
   "format_note": "JSON syntax is used as a dependency-free YAML 1.2 subset.",
-  "canonical_definition_status": "PROPOSED_FOR_REVIEW",
+  "canonical_definition_status": "BASELINE_FROZEN",
+  "baseline_freeze_scope": "Version 1.0 freezes canonical IDs, entity/relation definitions, semantic types, and relationships only; it does not certify independent mathematical review or language mappings.",
   "epistemic_model": {
     "OBJECT": "A geometric entity or entity-role.",
     "RELATION": "A predicate connecting entities; it is not an entity.",
@@ -82,10 +83,10 @@
     "AAM_CANON_EXTENSION": {
       "source": "This AAM geometry-canon proposal",
       "document": "geometry_concepts.yaml",
-      "status": "PROPOSED_FOR_REVIEW; no independent mathematical or linguistic audit claimed"
+      "status": "BASELINE_FROZEN_FOR_V1.0; no independent mathematical or linguistic audit claimed"
     }
   },
-  "source_boundary": "AI Geometry Skill packages are declarative specifications. Capability status below is transcribed from AIGS_CAPABILITY_MODEL and is not a live runtime test.",
+  "source_boundary": "AI Geometry Skill Packages 01-03 provide declarative source material. Runtime capability data is outside this entity canon and is not a live runtime test.",
   "concepts": [
     {
       "canonical_id": "ENT_POINT",
@@ -98,10 +99,7 @@
       "valid_contexts": ["euclidean_2d"],
       "example": "Point A at (3, 4).",
       "common_errors": ["Treating coordinates as the point's name or identity."],
-      "definition_source": "AIGS_PACKAGE_01",
-      "skill_capability_status": "SUPPORTED",
-      "allowed_operations": ["DRAW_POINT"],
-      "skill_capability_evidence": "Capability Model lists 2D Euclidean points as supported primitives."
+      "definition_source": "AIGS_PACKAGE_01"
     },
     {
       "canonical_id": "ENT_LINE",
@@ -114,10 +112,7 @@
       "valid_contexts": ["euclidean_2d"],
       "example": "The line through distinct points A and B.",
       "common_errors": ["Treating a line as a finite segment."],
-      "definition_source": "AIGS_PACKAGE_01",
-      "skill_capability_status": "SUPPORTED",
-      "allowed_operations": ["DRAW_LINE", "CONSTRUCT_PARALLEL", "CONSTRUCT_PERPENDICULAR", "HeadlessGeometrySession.intersect when paired with a supported entity"],
-      "skill_capability_evidence": "Capability Model lists infinite lines as supported primitives."
+      "definition_source": "AIGS_PACKAGE_01"
     },
     {
       "canonical_id": "ENT_SEGMENT",
@@ -130,10 +125,7 @@
       "valid_contexts": ["euclidean_2d"],
       "example": "Segment AB with endpoints A and B.",
       "common_errors": ["Confusing the one-dimensional segment with a two-dimensional circular segment region."],
-      "definition_source": "AIGS_PACKAGE_01",
-      "skill_capability_status": "SUPPORTED",
-      "allowed_operations": ["DRAW_SEGMENT", "measure(id, 'SEGMENT_LENGTH')", "HeadlessGeometrySession.intersect for segment-segment cases"],
-      "skill_capability_evidence": "Capability Model lists finite segments and segment-length measurement."
+      "definition_source": "AIGS_PACKAGE_01"
     },
     {
       "canonical_id": "ENT_RAY",
@@ -146,10 +138,7 @@
       "valid_contexts": ["euclidean_2d"],
       "example": "A ray with origin A passing through B.",
       "common_errors": ["Treating a ray as a finite segment or as a directed vector without its geometric locus."],
-      "definition_source": "AAM_CANON_EXTENSION",
-      "skill_capability_status": "PARTIAL",
-      "allowed_operations": ["CONSTRUCT_ANGLE_BISECTOR output only; no general ray primitive is documented"],
-      "skill_capability_evidence": "An angle-bisector construction is described as a ray; no general ray primitive is listed in the capability model."
+      "definition_source": "AAM_CANON_EXTENSION"
     },
     {
       "canonical_id": "ENT_CIRCLE_BOUNDARY",
@@ -163,10 +152,7 @@
       "valid_contexts": ["euclidean_2d"],
       "example": "The circumference with center O and radius r.",
       "common_errors": ["Using the unqualified word circle for either the boundary or its filled region."],
-      "definition_source": "AIGS_PACKAGE_01",
-      "skill_capability_status": "PARTIAL",
-      "allowed_operations": ["DRAW_CIRCLE", "HeadlessGeometrySession.intersect for documented line-circle cases"],
-      "skill_capability_evidence": "Circles are supported primitives, but the capability model does not establish a separate runtime type for boundary versus region."
+      "definition_source": "AIGS_PACKAGE_01"
     },
     {
       "canonical_id": "ENT_DISK",
@@ -180,10 +166,7 @@
       "valid_contexts": ["euclidean_2d"],
       "example": "The filled region of radius r centered at O.",
       "common_errors": ["Equating the filled disk with its one-dimensional circle boundary."],
-      "definition_source": "AIGS_PACKAGE_01",
-      "skill_capability_status": "NOT_SUPPORTED",
-      "allowed_operations": [],
-      "skill_capability_evidence": "Package 01 defines Disk declaratively; the capability model lists circles but no explicit filled-region primitive."
+      "definition_source": "AIGS_PACKAGE_01"
     },
     {
       "canonical_id": "ENT_TRIANGLE",
@@ -196,10 +179,7 @@
       "valid_contexts": ["euclidean_2d"],
       "example": "Triangle ABC with non-collinear vertices A, B, and C.",
       "common_errors": ["Assuming three labels alone determine coordinates or a unique construction."],
-      "definition_source": "AAM_CANON_EXTENSION",
-      "skill_capability_status": "PARTIAL",
-      "allowed_operations": ["SET_TRIANGLE_ANGLES for the configured base triangle; no generic compound polygon operation"],
-      "skill_capability_evidence": "The semantic interface has a configured triangle; arbitrary compound polygons are not a supported primitive."
+      "definition_source": "AAM_CANON_EXTENSION"
     },
     {
       "canonical_id": "ENT_SQUARE",
@@ -212,10 +192,7 @@
       "valid_contexts": ["euclidean_2d"],
       "example": "A square with side length s.",
       "common_errors": ["Using square as a synonym for any rectangle or any quadrilateral."],
-      "definition_source": "AAM_CANON_EXTENSION",
-      "skill_capability_status": "NOT_SUPPORTED",
-      "allowed_operations": [],
-      "skill_capability_evidence": "No square compound-entity operation is listed; compound polygon entities are a capability gap."
+      "definition_source": "AAM_CANON_EXTENSION"
     },
     {
       "canonical_id": "ENT_RECTANGLE",
@@ -228,10 +205,7 @@
       "valid_contexts": ["euclidean_2d"],
       "example": "A rectangle with adjacent side lengths a and b.",
       "common_errors": ["Assuming all four sides must be equal; that condition defines a square."],
-      "definition_source": "AAM_CANON_EXTENSION",
-      "skill_capability_status": "NOT_SUPPORTED",
-      "allowed_operations": [],
-      "skill_capability_evidence": "No rectangle compound-entity operation is listed; compound polygon entities are a capability gap."
+      "definition_source": "AAM_CANON_EXTENSION"
     },
     {
       "canonical_id": "ENT_POLYGON",
@@ -244,10 +218,7 @@
       "valid_contexts": ["euclidean_2d"],
       "example": "A simple pentagon represented by five connected segments.",
       "common_errors": ["Assuming Polygon is an executable compound primitive in the Geometry Skill."],
-      "definition_source": "AAM_CANON_EXTENSION",
-      "skill_capability_status": "NOT_SUPPORTED",
-      "allowed_operations": ["Represent constituent points and segments separately; no POLYGON compound command"],
-      "skill_capability_evidence": "Capability Model explicitly identifies compound polygon entities as unsupported."
+      "definition_source": "AAM_CANON_EXTENSION"
     },
     {
       "canonical_id": "ENT_ANGLE",
@@ -260,10 +231,7 @@
       "valid_contexts": ["euclidean_2d", "polygon_interior_angle", "directed_angle_only_when_explicit"],
       "example": "The interior angle at vertex B formed by rays BA and BC.",
       "common_errors": ["Equating an intrinsic vertex angle with an extrinsic polar angle or assuming a unique angle without orientation/context."],
-      "definition_source": "AAM_CANON_EXTENSION",
-      "skill_capability_status": "PARTIAL",
-      "allowed_operations": ["GET_MEASUREMENTS for documented configured targets; arbitrary ANGLE_VALUE is unsupported"],
-      "skill_capability_evidence": "The skill models configured triangle angles and verifies right angles, but arbitrary angular measurement is a documented capability gap."
+      "definition_source": "AAM_CANON_EXTENSION"
     },
     {
       "canonical_id": "ENT_VERTEX",
@@ -276,10 +244,7 @@
       "valid_contexts": ["euclidean_2d", "polygon"],
       "example": "B is a vertex of triangle ABC.",
       "common_errors": ["Treating the vertex role as a different geometric dimension or confusing it with the angle measure."],
-      "definition_source": "AAM_CANON_EXTENSION",
-      "skill_capability_status": "PARTIAL",
-      "allowed_operations": ["SET_VERTEX_POSITION or MOVE_VERTEX for configured vertex IDs"],
-      "skill_capability_evidence": "The skill uses named points/vertices in its configured triangle; no separate vertex primitive is listed."
+      "definition_source": "AAM_CANON_EXTENSION"
     },
     {
       "canonical_id": "ENT_SIDE",
@@ -293,10 +258,7 @@
       "valid_contexts": ["polygon"],
       "example": "Segment AB is a side of triangle ABC when A and B are adjacent vertices.",
       "common_errors": ["Treating every side as a circle chord; it is a chord only when its endpoints lie on the same circle boundary."],
-      "definition_source": "AAM_CANON_EXTENSION",
-      "skill_capability_status": "PARTIAL",
-      "allowed_operations": ["DRAW_SEGMENT for existing endpoint points; polygon-side identity remains contextual"],
-      "skill_capability_evidence": "Segments are supported; polygon-side identity is a semantic role and not a separate primitive."
+      "definition_source": "AAM_CANON_EXTENSION"
     },
     {
       "canonical_id": "REL_PARALLEL",
@@ -309,11 +271,7 @@
       "valid_contexts": ["euclidean_2d"],
       "example": "Line l is parallel to line m.",
       "common_errors": ["Treating parallelism as an object, or silently deciding whether coincident lines count as parallel."],
-      "definition_source": "AAM_CANON_EXTENSION",
-      "capability_source": "AIGS_CAPABILITY_MODEL",
-      "skill_capability_status": "DOCUMENTED_SUPPORTED_INTERFACE_MISMATCH",
-      "allowed_operations": ["CONSTRUCT_PARALLEL", "VERIFY_RELATION relation='PARALLEL'"],
-      "skill_capability_evidence": "Capability Model lists the PARALLEL_TO verification predicate and parallel-line construction."
+      "definition_source": "AAM_CANON_EXTENSION"
     },
     {
       "canonical_id": "REL_PERPENDICULAR",
@@ -326,11 +284,7 @@
       "valid_contexts": ["euclidean_2d"],
       "example": "Line l is perpendicular to segment AB at their intersection.",
       "common_errors": ["Treating perpendicularity as an object or as an arbitrary angle-measurement feature."],
-      "definition_source": "AAM_CANON_EXTENSION",
-      "capability_source": "AIGS_CAPABILITY_MODEL",
-      "skill_capability_status": "DOCUMENTED_SUPPORTED_INTERFACE_MISMATCH",
-      "allowed_operations": ["CONSTRUCT_PERPENDICULAR", "VERIFY_RELATION relation='PERPENDICULAR'"],
-      "skill_capability_evidence": "Capability Model lists the PERPENDICULAR_TO verification predicate and perpendicular construction."
+      "definition_source": "AAM_CANON_EXTENSION"
     },
     {
       "canonical_id": "REL_INTERSECTION",
@@ -343,11 +297,7 @@
       "valid_contexts": ["euclidean_2d"],
       "example": "The intersection of a line and a circle may contain zero, one, or two points.",
       "common_errors": ["Treating an intersection relation as necessarily one point or as a live dependency after materialization."],
-      "definition_source": "AAM_CANON_EXTENSION",
-      "capability_source": "AIGS_CAPABILITY_MODEL",
-      "skill_capability_status": "SUPPORTED_WITH_SNAPSHOT_LIMIT",
-      "allowed_operations": ["HeadlessGeometrySession.intersect for line-line, line-circle, and segment-segment; returns static point snapshots"],
-      "skill_capability_evidence": "Capability Model lists line-line, line-circle, and segment-segment intersections; results are static snapshots."
+      "definition_source": "AAM_CANON_EXTENSION"
     },
     {
       "canonical_id": "ENT_RADIUS",
@@ -362,10 +312,7 @@
       "valid_contexts": ["euclidean_2d", "circle"],
       "example": "Segment OP is a radius when O is the center and P lies on the boundary.",
       "common_errors": ["Confusing the radius segment with the scalar radius value."],
-      "definition_source": "AIGS_PACKAGE_01",
-      "skill_capability_status": "PARTIAL",
-      "allowed_operations": ["DRAW_CIRCLE with radius parameter; measure an explicit segment length"],
-      "skill_capability_evidence": "The skill supports circle radius parameters and segment-length measurement; the capability model does not list a constrained radius entity."
+      "definition_source": "AIGS_PACKAGE_01"
     },
     {
       "canonical_id": "ENT_DIAMETER",
@@ -380,16 +327,16 @@
       "valid_contexts": ["euclidean_2d", "circle"],
       "example": "Segment AB is a diameter if A and B lie on the circle boundary and AB passes through O.",
       "common_errors": ["Inferring diameter status from length alone or treating a diameter predicate as a verified runtime capability."],
-      "definition_source": "AIGS_PACKAGE_01",
-      "skill_capability_status": "DECLARATIVE_ONLY",
-      "allowed_operations": ["DRAW_SEGMENT as geometric representation only; no diameter-specific verification operation is confirmed"],
-      "skill_capability_evidence": "Package 01 defines diameter, but the public capability model does not list a diameter verification predicate; AAM Gateway examples are not proof of runtime support."
+      "definition_source": "AIGS_PACKAGE_01"
     }
   ],
   "semantic_guard": {
     "must_remain_distinct": [
       ["ENT_CIRCLE_BOUNDARY", "ENT_DISK"],
       ["ENT_LINE", "ENT_SEGMENT"],
+      ["ENT_LINE", "ENT_RAY"],
+      ["ENT_SEGMENT", "ENT_RAY"],
+      ["ENT_SQUARE", "ENT_RECTANGLE"],
       ["ENT_ANGLE", "EXTRINSIC_POLAR_ANGLE"],
       ["REL_PARALLEL", "OBJECT"],
       ["REL_PERPENDICULAR", "OBJECT"],

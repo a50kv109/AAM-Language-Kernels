@@ -1,13 +1,15 @@
-# AAM Engineering Geometry Canon
+# AAM Engineering Geometry Entity Canon
 
 **Version:** 1.0.0
-**Status:** Initial candidate; canonical definitions are proposed for review.
+**Status:** `GEOMETRY_ENTITY_CANON_V1.0 — BASELINE FROZEN`
 **Language mappings:** Proposed, not independently linguistically validated.
 **Geometry Skill execution:** Not run for this integration.
 
 ## Purpose and boundary
 
-This catalog gives the language kernels shared, language-independent identifiers for a small planar-geometry vocabulary. It is an ontology and semantic-mapping layer, not a language parser, geometry engine, or proof system. Existing AXIS-10/AAM structures remain unchanged.
+This catalog gives the language kernels shared, language-independent identifiers for a small planar-geometry vocabulary. Version 1.0 freezes the entity IDs, definitions, semantic types, and relationships as a baseline for review. The freeze does not certify the definitions or translations as independently audited.
+
+This is the entity and terminology layer, not an operations catalog, language parser, geometry engine, or proof system. It intentionally defines no construction commands, measurements, calculations, or theorem procedures. Existing AXIS-10/AAM structures remain unchanged.
 
 The canonical records are in [`geometry_concepts.yaml`](./geometry_concepts.yaml). It uses JSON syntax, a dependency-free subset of YAML 1.2, so the repository validator can check it using Python's standard library.
 
@@ -26,11 +28,11 @@ In particular:
 
 ## Source and epistemic status
 
-Definitions and skill capability labels distinguish declarative specifications from executable support. The Geometry Skill's Packages 01–03 are specifications, while its capability model and semantic interface describe a separate runtime boundary. Capability labels in this repository are documentary classifications only; they are not results of running the Skill. Benchmark fixture terms and expected intents are `HYPOTHESIS`; they are not `TOOL-VERIFIED` results.
+The Geometry Skill's Packages 01–03 are declarative specifications. Runtime capability observations are kept out of the entity records and summarized separately in the validation report; they are not results of running the Skill. Benchmark fixture terms and expected intents are `HYPOTHESIS`; they are not `TOOL-VERIFIED` results.
 
 Package 02 supplies the circle-structure relations and the contextual Side/Chord boundary; it does not define `Parallel`, `Perpendicular`, or `Intersection`. Those three canonical records are AAM extensions whose documented execution capabilities are recorded separately.
 
-Language mapping records preserve candidate native-script terms and their status. Every mapping currently has `translation_validation_status: NOT_VERIFIED`; no source-based linguistic review is claimed. Empty grammatical-form and transliteration fields mean that data has not been supplied. The cited training scenarios T01–T10 were reviewed as references, but were neither imported nor executed.
+Language mapping records preserve candidate native-script terms and their status. Every mapping currently has `translation_validation_status: NOT_VERIFIED` and `linguistic_review_status: NOT_RUN`; no source-based linguistic review is claimed. Grammatical forms, context variants, translation-error notes, ambiguity notes, and transliterations are currently empty or null and must not be interpreted as verified absence. The cited training scenarios T01–T10 were reviewed as references, but were neither imported nor executed.
 
 ## Integration model
 
