@@ -10,6 +10,7 @@ AAM-Language-Kernels: Модульная архитектура языковог
 - 🇷🇺 Русский (rus)
 - 🇺🇦 Украинский (ukr)
 - 🇨🇳 Китайский (zho)
+- 🇮🇱 Иврит (heb) — CORE_HEBREW_V1.0 / PROPOSED INITIAL BASELINE; Unicode utilities and optional Stanza adapter (Hebrew model not installed in the current environment)
 - 🇯🇵 Японский (jpn) — L2_JA / PROPOSED INITIAL BASELINE
 - 🇫🇷 Французский (fra)
 - 🇩🇪 Немецкий (deu)

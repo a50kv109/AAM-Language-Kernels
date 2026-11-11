@@ -1,0 +1,35 @@
+kernel_id: CORE_HEBREW_V1.0
+language: Hebrew
+native_name: עברית
+iso_639_3: heb
+script: Hebrew
+version: 1.0.0
+status: PROPOSED
+epistemic_statuses:
+  - VERIFIED
+  - SOURCE_SUPPORTED
+  - INFERRED
+  - PROPOSED
+  - NOT_VERIFIED
+  - RESEARCH_ONLY
+implementation:
+  runtime_scope:
+    - Unicode NFC normalization for analysis and explicit NFC/NFD normalization utility
+    - Preservation of original text, niqqud, cantillation marks, and logical character order
+    - Whitespace tokenization with normalized-text character spans
+    - First-strong direction and mixed RTL/LTR script metadata
+    - JSON-compatible AAM analysis result with explicit unresolved fields
+    - Optional Stanza adapter for Hebrew UD tokenization, MWT, POS, lemma, features, and dependencies
+  not_implemented:
+    - native Hebrew morphological analysis without the optional Stanza model
+    - root extraction
+    - semantic-sense selection
+    - acoustic signal processing
+    - historical or sacred-text interpretation
+nlp_adapter:
+  engine: Stanza
+  optional: true
+  current_environment: not_installed
+  model: Hebrew Universal Dependencies; not installed or runtime-verified
+  automatic_model_download: disabled
+evidence_note: Stanza behavior is verified only through an injected test pipeline; the engine and Hebrew model are not installed in the current environment.
